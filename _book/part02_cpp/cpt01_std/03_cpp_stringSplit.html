@@ -1,0 +1,827 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Section1.3 string分割 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04_cpp_filpedLine.html" />
+    
+    
+    <link rel="prev" href="02_cpp_fstream.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../part01_git/">
+            
+                <a href="../../part01_git/">
+            
+                    
+                    Part 1 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../part01_git/cpt01_gitbook/">
+            
+                <a href="../../part01_git/cpt01_gitbook/">
+            
+                    
+                    Chapter 1 gitbook使用心得
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../part01_git/cpt01_gitbook/01_gitbook_install.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/01_gitbook_install.html">
+            
+                    
+                    Section1.1 gitbook安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../part01_git/cpt01_gitbook/02_gitbook_use.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/02_gitbook_use.html">
+            
+                    
+                    Section1.2 gitbook命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../part01_git/cpt02_git/">
+            
+                <a href="../../part01_git/cpt02_git/">
+            
+                    
+                    Chapter 2 git使用心得
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../part01_git/cpt02_git/01_git_command.html">
+            
+                <a href="../../part01_git/cpt02_git/01_git_command.html">
+            
+                    
+                    Section2.1 git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../part01_git/cpt02_git/02_git_pull_clone.html">
+            
+                <a href="../../part01_git/cpt02_git/02_git_pull_clone.html">
+            
+                    
+                    Section2.2 git下拉远程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../part01_git/cpt03_md/">
+            
+                <a href="../../part01_git/cpt03_md/">
+            
+                    
+                    Chapter 3 MarkDown语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../part01_git/cpt03_md/01_md_usual.html">
+            
+                <a href="../../part01_git/cpt03_md/01_md_usual.html">
+            
+                    
+                    Section3.1 常规用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../part01_git/cpt03_md/02_md_latex.html">
+            
+                <a href="../../part01_git/cpt03_md/02_md_latex.html">
+            
+                    
+                    Section3.2 LaTeX语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Part 2 C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 1 STD库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="01_cpp_LINUX_WIN32.html">
+            
+                <a href="01_cpp_LINUX_WIN32.html">
+            
+                    
+                    Section1.1 WIN32 -> LINUX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="02_cpp_fstream.html">
+            
+                <a href="02_cpp_fstream.html">
+            
+                    
+                    Section1.2 fstream读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.3" data-path="03_cpp_stringSplit.html">
+            
+                <a href="03_cpp_stringSplit.html">
+            
+                    
+                    Section1.3 string分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="04_cpp_filpedLine.html">
+            
+                <a href="04_cpp_filpedLine.html">
+            
+                    
+                    Section1.4 转动的线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cpt02_gdal/">
+            
+                <a href="../cpt02_gdal/">
+            
+                    
+                    Chapter 2 GDAL库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../cpt03_opencv/">
+            
+                <a href="../cpt03_opencv/">
+            
+                    
+                    Chapter 3 OPENCV库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../cpt04_tinyxml.html">
+            
+                <a href="../cpt04_tinyxml.html">
+            
+                    
+                    Chapter 4 TINYXML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../cpt05_eigen/">
+            
+                <a href="../cpt05_eigen/">
+            
+                    
+                    Chapter 5 EIGEN库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../cpt05_eigen/01_eigen_init.html">
+            
+                <a href="../cpt05_eigen/01_eigen_init.html">
+            
+                    
+                    Section5.1 基础操作预留1-20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../cpt05_eigen/21_eigen_linear_algebra.html">
+            
+                <a href="../cpt05_eigen/21_eigen_linear_algebra.html">
+            
+                    
+                    Section5.21 线性问题预留21-40
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../cpt05_eigen/41_eigen_Sparse_matrix.html">
+            
+                <a href="../cpt05_eigen/41_eigen_Sparse_matrix.html">
+            
+                    
+                    Section5.21 稀疏矩阵预留41-..
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../cpt99_odd_funcs/">
+            
+                <a href="../cpt99_odd_funcs/">
+            
+                    
+                    Chapter 99？ 无关的C++函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../cpt99_odd_funcs/01_cpp_filpedLine.html">
+            
+                <a href="../cpt99_odd_funcs/01_cpp_filpedLine.html">
+            
+                    
+                    Section99.1 转动的线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../cpt99_odd_funcs/02_cpp_binary_float_IO.html">
+            
+                <a href="../cpt99_odd_funcs/02_cpp_binary_float_IO.html">
+            
+                    
+                    Section99.2 二进制float读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../cpt99_odd_funcs/03_cpp_mat_IO.html">
+            
+                <a href="../cpt99_odd_funcs/03_cpp_mat_IO.html">
+            
+                    
+                    Section99.3 mat读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../cpt99_odd_funcs/04_cpp_for_processBar.html">
+            
+                <a href="../cpt99_odd_funcs/04_cpp_for_processBar.html">
+            
+                    
+                    Section99.4 for循环进度条
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../part03_qt/">
+            
+                <a href="../../part03_qt/">
+            
+                    
+                    Part 3 Qt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../part03_qt/cpt01_landapp/">
+            
+                <a href="../../part03_qt/cpt01_landapp/">
+            
+                    
+                    Chapter 1 LandApp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../part03_qt/cpt01_landapp/01_landapp_core.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/01_landapp_core.html">
+            
+                    
+                    Section1.1 LandApp/Core工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../part03_qt/cpt01_landapp/02_landapp_another.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/02_landapp_another.html">
+            
+                    
+                    Section1.2 LandApp/其他工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../part03_qt/cpt01_landapp/03_landapp_landsarwnd.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/03_landapp_landsarwnd.html">
+            
+                    
+                    Section1.3 LandApp/LadnSARWnd主界面生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../part04_rs/">
+            
+                <a href="../../part04_rs/">
+            
+                    
+                    Part 4 RemoteSensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../part04_rs/cpt01_img_processing/">
+            
+                <a href="../../part04_rs/cpt01_img_processing/">
+            
+                    
+                    Chapter 1 图像处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../part04_rs/cpt01_img_processing/01_rg_filter.html">
+            
+                <a href="../../part04_rs/cpt01_img_processing/01_rg_filter.html">
+            
+                    
+                    Section1.1 RG滤波
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../part04_rs/cpt02_coord_sys_conversion/">
+            
+                <a href="../../part04_rs/cpt02_coord_sys_conversion/">
+            
+                    
+                    Chapter 2 坐标系转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../part04_rs/cpt02_coord_sys_conversion/01_utm_to_wgs84blh.html">
+            
+                <a href="../../part04_rs/cpt02_coord_sys_conversion/01_utm_to_wgs84blh.html">
+            
+                    
+                    Section2.1 UTM to WGS84 BLH
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Section1.3 string分割</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="string&#x5206;&#x5272;">string&#x5206;&#x5272;</h1>
+<h2 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;</h2>
+<p>&#x8F93;&#x5165;&#x5B57;&#x7B26;&#x4E32;str&#xFF0C;</p>
+<p>&#x8F93;&#x51FA;&#x5F85;&#x5206;&#x5272;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;strList&#xFF0C;</p>
+<p>&#x8F93;&#x5165;&#x5206;&#x5272;&#x7B26;&#x53F7;split&#x3002;</p>
+<h2 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h2>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+
+using std::vector;
+using std::string;
+
+void strSplit(string str, vector&lt;string&gt; &amp;strList, string split){
+    // strList.clear();
+    std::string::size_type pos1, pos2;
+    pos2 = str.find(split);
+    pos1 = 0;
+    while(std::string::npos != pos2){
+        strList.push_back(str.substr(pos1,pos2-pos1));
+        pos1 = pos2 + split.size();
+        pos2 = str.find(split, pos1);
+    }
+    if (pos1 != str.length())
+        strList.push_back(str.substr(pos1));
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02_cpp_fstream.html" class="navigation navigation-prev " aria-label="Previous page: Section1.2 fstream读写">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04_cpp_filpedLine.html" class="navigation navigation-next " aria-label="Next page: Section1.4 转动的线">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Section1.3 string分割","level":"1.3.1.3","depth":3,"next":{"title":"Section1.4 转动的线","level":"1.3.1.4","depth":3,"path":"part02_cpp/cpt01_std/04_cpp_filpedLine.md","ref":"part02_cpp/cpt01_std/04_cpp_filpedLine.md","articles":[]},"previous":{"title":"Section1.2 fstream读写","level":"1.3.1.2","depth":3,"path":"part02_cpp/cpt01_std/02_cpp_fstream.md","ref":"part02_cpp/cpt01_std/02_cpp_fstream.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part02_cpp/cpt01_std/03_cpp_stringSplit.md","mtime":"2022-01-15T12:25:03.166Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-26T04:25:23.420Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,872 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Section2.1 UTM to WGS84 BLH · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../part01_git/">
+            
+                <a href="../../part01_git/">
+            
+                    
+                    Part 1 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../part01_git/cpt01_gitbook/">
+            
+                <a href="../../part01_git/cpt01_gitbook/">
+            
+                    
+                    Chapter 1 gitbook使用心得
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../part01_git/cpt01_gitbook/01_gitbook_install.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/01_gitbook_install.html">
+            
+                    
+                    Section1.1 gitbook安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../part01_git/cpt01_gitbook/02_gitbook_use.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/02_gitbook_use.html">
+            
+                    
+                    Section1.2 gitbook命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../part01_git/cpt02_git/">
+            
+                <a href="../../part01_git/cpt02_git/">
+            
+                    
+                    Chapter 2 git使用心得
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../part01_git/cpt02_git/01_git_command.html">
+            
+                <a href="../../part01_git/cpt02_git/01_git_command.html">
+            
+                    
+                    Section2.1 git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../part01_git/cpt02_git/02_git_pull_clone.html">
+            
+                <a href="../../part01_git/cpt02_git/02_git_pull_clone.html">
+            
+                    
+                    Section2.2 git下拉远程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../part01_git/cpt03_md/">
+            
+                <a href="../../part01_git/cpt03_md/">
+            
+                    
+                    Chapter 3 MarkDown语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../part01_git/cpt03_md/01_md_usual.html">
+            
+                <a href="../../part01_git/cpt03_md/01_md_usual.html">
+            
+                    
+                    Section3.1 常规用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../part01_git/cpt03_md/02_md_latex.html">
+            
+                <a href="../../part01_git/cpt03_md/02_md_latex.html">
+            
+                    
+                    Section3.2 LaTeX语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../part02_cpp/">
+            
+                <a href="../../part02_cpp/">
+            
+                    
+                    Part 2 C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../part02_cpp/cpt01_std/">
+            
+                <a href="../../part02_cpp/cpt01_std/">
+            
+                    
+                    Chapter 1 STD库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../part02_cpp/cpt01_std/01_cpp_LINUX_WIN32.html">
+            
+                <a href="../../part02_cpp/cpt01_std/01_cpp_LINUX_WIN32.html">
+            
+                    
+                    Section1.1 WIN32 -> LINUX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../part02_cpp/cpt01_std/02_cpp_fstream.html">
+            
+                <a href="../../part02_cpp/cpt01_std/02_cpp_fstream.html">
+            
+                    
+                    Section1.2 fstream读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../part02_cpp/cpt01_std/03_cpp_stringSplit.html">
+            
+                <a href="../../part02_cpp/cpt01_std/03_cpp_stringSplit.html">
+            
+                    
+                    Section1.3 string分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../part02_cpp/cpt01_std/04_cpp_filpedLine.html">
+            
+                <a href="../../part02_cpp/cpt01_std/04_cpp_filpedLine.html">
+            
+                    
+                    Section1.4 转动的线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../part02_cpp/cpt02_gdal/">
+            
+                <a href="../../part02_cpp/cpt02_gdal/">
+            
+                    
+                    Chapter 2 GDAL库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../part02_cpp/cpt03_opencv/">
+            
+                <a href="../../part02_cpp/cpt03_opencv/">
+            
+                    
+                    Chapter 3 OPENCV库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../part02_cpp/cpt04_tinyxml.html">
+            
+                <a href="../../part02_cpp/cpt04_tinyxml.html">
+            
+                    
+                    Chapter 4 TINYXML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../part02_cpp/cpt05_eigen/">
+            
+                <a href="../../part02_cpp/cpt05_eigen/">
+            
+                    
+                    Chapter 5 EIGEN库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../part02_cpp/cpt05_eigen/01_eigen_init.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/01_eigen_init.html">
+            
+                    
+                    Section5.1 基础操作预留1-20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../part02_cpp/cpt05_eigen/21_eigen_linear_algebra.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/21_eigen_linear_algebra.html">
+            
+                    
+                    Section5.21 线性问题预留21-40
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../../part02_cpp/cpt05_eigen/41_eigen_Sparse_matrix.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/41_eigen_Sparse_matrix.html">
+            
+                    
+                    Section5.21 稀疏矩阵预留41-..
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../part02_cpp/cpt99_odd_funcs/">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/">
+            
+                    
+                    Chapter 99？ 无关的C++函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../part02_cpp/cpt99_odd_funcs/01_cpp_filpedLine.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/01_cpp_filpedLine.html">
+            
+                    
+                    Section99.1 转动的线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../part02_cpp/cpt99_odd_funcs/02_cpp_binary_float_IO.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/02_cpp_binary_float_IO.html">
+            
+                    
+                    Section99.2 二进制float读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../part02_cpp/cpt99_odd_funcs/03_cpp_mat_IO.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/03_cpp_mat_IO.html">
+            
+                    
+                    Section99.3 mat读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../../part02_cpp/cpt99_odd_funcs/04_cpp_for_processBar.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/04_cpp_for_processBar.html">
+            
+                    
+                    Section99.4 for循环进度条
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../part03_qt/">
+            
+                <a href="../../part03_qt/">
+            
+                    
+                    Part 3 Qt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../part03_qt/cpt01_landapp/">
+            
+                <a href="../../part03_qt/cpt01_landapp/">
+            
+                    
+                    Chapter 1 LandApp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../part03_qt/cpt01_landapp/01_landapp_core.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/01_landapp_core.html">
+            
+                    
+                    Section1.1 LandApp/Core工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../part03_qt/cpt01_landapp/02_landapp_another.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/02_landapp_another.html">
+            
+                    
+                    Section1.2 LandApp/其他工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../part03_qt/cpt01_landapp/03_landapp_landsarwnd.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/03_landapp_landsarwnd.html">
+            
+                    
+                    Section1.3 LandApp/LadnSARWnd主界面生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Part 4 RemoteSensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../cpt01_img_processing/">
+            
+                <a href="../cpt01_img_processing/">
+            
+                    
+                    Chapter 1 图像处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../cpt01_img_processing/01_rg_filter.html">
+            
+                <a href="../cpt01_img_processing/01_rg_filter.html">
+            
+                    
+                    Section1.1 RG滤波
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter 2 坐标系转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.2.1" data-path="01_utm_to_wgs84blh.html">
+            
+                <a href="01_utm_to_wgs84blh.html">
+            
+                    
+                    Section2.1 UTM to WGS84 BLH
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Section2.1 UTM to WGS84 BLH</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="section21-utm-to-wgs84-blh">Section2.1 UTM to WGS84 BLH</h1>
+<h2 id="history">History</h2>
+<p>The <a href="https://en.wikipedia.org/wiki/National_Oceanic_and_Atmospheric_Administration" target="_blank">National Oceanic and Atmospheric Administration</a> (NOAA) website states the system to have been developed by the <a href="https://en.wikipedia.org/wiki/United_States_Army_Corps_of_Engineers" target="_blank">United States Army Corps of Engineers</a>, starting in the early 1940s.<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-3" target="_blank">[3]</a> However, a series of aerial photos found in the Bundesarchiv-Milit&#xE4;rarchiv (the military section of the <a href="https://en.wikipedia.org/wiki/German_Federal_Archives" target="_blank">German Federal Archives</a>) apparently dating from 1943&#x2013;1944 bear the inscription UTMREF followed by grid letters and digits, and projected according to the transverse Mercator,<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-Buchroithner-4" target="_blank">[4]</a> a finding that would indicate that something called the UTM Reference system was developed in the 1942&#x2013;43 time frame by the <a href="https://en.wikipedia.org/wiki/Wehrmacht" target="_blank">Wehrmacht</a>. It was probably carried out by the Abteilung f&#xFC;r Luftbildwesen (Department for Aerial Photography). From 1947 onward the US Army employed a very similar system, but with the now-standard 0.9996 scale factor at the central meridian as opposed to the German 1.0.<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-Buchroithner-4" target="_blank">[4]</a> For areas within the <a href="https://en.wikipedia.org/wiki/Contiguous_United_States" target="_blank">contiguous United States</a> the <a href="https://en.wikipedia.org/wiki/Alexander_Ross_Clarke" target="_blank">Clarke</a> <a href="https://en.wikipedia.org/wiki/Earth_ellipsoid#Historical_Earth_ellipsoids" target="_blank">Ellipsoid</a> of 1866<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-5" target="_blank">[5]</a> was used. For the remaining areas of Earth, including <a href="https://en.wikipedia.org/wiki/Hawaii" target="_blank">Hawaii</a>, the <a href="https://en.wikipedia.org/wiki/International_Ellipsoid" target="_blank">International Ellipsoid</a><a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-6" target="_blank">[6]</a> was used. The <a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">World Geodetic System</a> WGS84 ellipsoid is now generally used to model the Earth in the UTM coordinate system, which means current UTM northing at a given point can differ up to 200 meters from the old. For different geographic regions, other datum systems can be used.</p>
+<p>Prior to the development of the Universal Transverse Mercator coordinate system, several European nations demonstrated the utility of grid-based conformal maps by mapping their territory during the <a href="https://en.wikipedia.org/wiki/Interwar_period" target="_blank">interwar period</a>. Calculating the distance between two points on these maps could be performed more easily in the field (using the <a href="https://en.wikipedia.org/wiki/Pythagorean_theorem" target="_blank">Pythagorean theorem</a>) than was possible using the trigonometric formulas required under the graticule-based system of <a href="https://en.wikipedia.org/wiki/Geographic_coordinate_system" target="_blank">latitude and longitude</a>. In the post-war years, these concepts were extended into the Universal Transverse Mercator/<a href="https://en.wikipedia.org/wiki/Universal_Polar_Stereographic" target="_blank">Universal Polar Stereographic</a> (UTM/UPS) coordinate system, which is a global (or universal) system of grid-based maps.</p>
+<p>The transverse Mercator projection is a variant of the <a href="https://en.wikipedia.org/wiki/Mercator_projection" target="_blank">Mercator projection</a>, which was originally developed by the <a href="https://en.wikipedia.org/wiki/Flemish_people" target="_blank">Flemish</a> geographer and cartographer <a href="https://en.wikipedia.org/wiki/Gerardus_Mercator" target="_blank">Gerardus Mercator</a>, in 1570. This projection is <a href="https://en.wikipedia.org/wiki/Conformal_map_projection#Conformal" target="_blank">conformal</a>, which means it preserves angles and therefore shapes across small regions. However, it distorts distance and area.</p>
+<p>Definitions[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=2" target="_blank">edit</a>]</p>
+<p><strong>UTM zone</strong>[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=3" target="_blank">edit</a>]</p>
+<p><img src="pics/utm_wgs84blh_pic_01.png" alt="img"></p>
+<p>Simplified view of <a href="https://en.wikipedia.org/wiki/Contiguous_United_States" target="_blank">contiguous US</a> UTM zones, projected with Lambert conformal conic.</p>
+<p>The UTM system divides the Earth into 60 zones, each 6&#xB0; of longitude in width. Zone 1 covers longitude 180&#xB0; to 174&#xB0; W; zone numbering increases eastward to zone 60, which covers longitude 174&#xB0;E to 180&#xB0;. The polar regions south of <a href="https://en.wikipedia.org/wiki/80th_parallel_south" target="_blank">80&#xB0;S</a> and north of <a href="https://en.wikipedia.org/wiki/84th_parallel_north" target="_blank">84&#xB0;N</a> are excluded.</p>
+<p>Each of the 60 zones uses a <a href="https://en.wikipedia.org/wiki/Transverse_Mercator" target="_blank">transverse Mercator</a> projection that can map a region of large north-south extent with low distortion. By using narrow zones of 6&#xB0; of longitude (up to 668 km) in width, and reducing the <a href="https://en.wikipedia.org/wiki/Scale_(map" target="_blank">scale</a>) factor along the central <a href="https://en.wikipedia.org/wiki/Meridian_(geography" target="_blank">meridian</a>) to 0.9996 (a reduction of 1:2500), the amount of distortion is held below 1 part in 1,000 inside each zone. Distortion of scale increases to 1.0010 at the zone boundaries along the <a href="https://en.wikipedia.org/wiki/Equator" target="_blank">equator</a>.</p>
+<p>In each zone the scale factor of the central meridian reduces the diameter of the transverse cylinder to produce a secant projection with two <a href="https://en.wikipedia.org/wiki/Standard_line" target="_blank">standard lines</a>, or lines of true scale, about 180 km on each side of, and about parallel to, the central meridian (Arc cos 0.9996 = 1.62&#xB0; at the Equator). The scale is less than 1 inside the standard lines and greater than 1 outside them, but the overall distortion is minimized.</p>
+<p><strong>Overlapping grids</strong>[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=4" target="_blank">edit</a>]</p>
+<p><img src="pics/utm_wgs84blh_pic_02.png" alt="img"></p>
+<p>Universal Transverse Mercator (UTM) Grid Zones 31N thru 37N differ from the standard 6&#xB0; wide by 84&#xB0; zone for the northern hemisphere, in part to accommodate the southern half of the Kingdom of Norway. For more on its history, see Clifford J. Mugnier&apos;s article on Grids &amp; Datums of The Kingdom of Norway that appeared in the October 1999 issue of PE&amp;RS <a href="http://www.asprs.org/a/resources/grids/10-99-norway.pdf" target="_blank">http://www.asprs.org/a/resources/grids/10-99-norway.pdf</a></p>
+<p>Distortion of scale increases in each UTM zone as the boundaries between the UTM zones are approached. However, it is often convenient or necessary to measure a series of locations on a single grid when some are located in two adjacent zones. Around the boundaries of large scale maps (1:100,000 or larger) coordinates for both adjoining UTM zones are usually printed within a minimum distance of 40 km on either side of a zone boundary. Ideally, the coordinates of each position should be measured on the grid for the zone in which they are located, but because the scale factor is still relatively small near zone boundaries, it is possible to overlap measurements into an adjoining zone for some distance when necessary.</p>
+<p>Latitude bands[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=5" target="_blank">edit</a>]</p>
+<p>Latitude bands are not a part of UTM, but rather a part of the <a href="https://en.wikipedia.org/wiki/Military_grid_reference_system" target="_blank">military grid reference system</a> (MGRS).<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-7" target="_blank">[7]</a> They are however sometimes used.</p>
+<p><strong>Latitude bands</strong>[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=6" target="_blank">edit</a>]</p>
+<p>Each zone is segmented into 20 latitude bands. Each latitude band is 8 degrees high, and is lettered starting from &quot;C&quot; at <a href="https://en.wikipedia.org/wiki/80th_parallel_south" target="_blank">80&#xB0;S</a>, increasing up the <a href="https://en.wikipedia.org/wiki/English_language" target="_blank">English</a> <a href="https://en.wikipedia.org/wiki/Alphabet" target="_blank">alphabet</a> until &quot;X&quot;, omitting the letters &quot;I&quot; and &quot;O&quot; (because of their similarity to the numerals one and zero). The last latitude band, &quot;X&quot;, is extended an extra 4 degrees, so it ends at <a href="https://en.wikipedia.org/wiki/84th_parallel_north" target="_blank">84&#xB0;N latitude</a>, thus covering the northernmost land on Earth.</p>
+<p>Latitude bands &quot;A&quot; and &quot;B&quot; do exist, as do bands &quot;Y&quot; and &quot;Z&quot;. They cover the western and eastern sides of the Antarctic and Arctic regions respectively. A convenient <a href="https://en.wikipedia.org/wiki/Mnemonic" target="_blank">mnemonic</a> to remember is that the letter &quot;N&quot; is the first letter in &quot;northern hemisphere&quot;, so any letter coming before &quot;N&quot; in the alphabet is in the southern hemisphere, and any letter &quot;N&quot; or after is in the northern hemisphere.</p>
+<p><strong>Notation</strong>[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=7" target="_blank">edit</a>]</p>
+<p>The combination of a zone and a latitude band defines a grid zone. The zone is always written first, followed by the latitude band. For example, (see image, top right), a position in <a href="https://en.wikipedia.org/wiki/Toronto,_Ontario" target="_blank">Toronto, Ontario</a>, <a href="https://en.wikipedia.org/wiki/Canada" target="_blank">Canada</a>, would find itself in zone 17 and latitude band &quot;T&quot;, thus the full grid zone reference is &quot;17T&quot;. The grid zones serve to delineate irregular UTM zone boundaries. They also are an integral part of the <a href="https://en.wikipedia.org/wiki/Military_grid_reference_system" target="_blank">military grid reference system</a>.</p>
+<p>A note of caution: A method also is used that simply adds N or S following the zone number to indicate North or South hemisphere (the easting and northing coordinates along with the zone number supplying everything necessary to geolocate a position except which hemisphere). However, this method has caused some confusion since, for instance, &quot;50S&quot; can mean southern hemisphere but also <em>grid zone</em> &quot;50S&quot; in the northern hemisphere.<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-8" target="_blank">[8]</a> There are many possible ways to disambiguate between the two methods, two of which are demonstrated later in this article.</p>
+<p><strong>Exceptions</strong>[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=8" target="_blank">edit</a>]</p>
+<p>These grid zones are uniform over the globe, except in two areas. On the southwest coast of <a href="https://en.wikipedia.org/wiki/Norway" target="_blank">Norway</a>, grid zone 32V (9&#xB0; of longitude in width) is extended further west, and grid zone 31V (3&#xB0; of longitude in width) is correspondingly shrunk to cover only open water. Also, in the region around <a href="https://en.wikipedia.org/wiki/Svalbard" target="_blank">Svalbard</a>, the four grid zones 31X (9&#xB0; of longitude in width), 33X (12&#xB0; of longitude in width), 35X (12&#xB0; of longitude in width), and 37X (9&#xB0; of longitude in width) are extended to cover what would otherwise have been covered by the seven grid zones 31X to 37X. The three grid zones 32X, 34X and 36X are not used.</p>
+<ul>
+<li><strong>Grid zones in various parts of the world</strong></li>
+</ul>
+<p><img src="pics/utm_wgs84blh_pic_03.png" alt="img"></p>
+<p>Europe</p>
+<p><img src="pics/utm_wgs84blh_pic_04.png" alt="img"></p>
+<p>Africa </p>
+<p><img src="pics/utm_wgs84blh_pic_05.png" alt="img"></p>
+<p>South America </p>
+<p><img src="pics/utm_wgs84blh_pic_06.png" alt="img"></p>
+<p>Bering Sea with Alaska</p>
+<p>Locating a position using UTM coordinates[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=9" target="_blank">edit</a>]</p>
+<p>A position on the Earth is given by the UTM zone number and the <a href="https://en.wikipedia.org/wiki/Easting_and_northing" target="_blank">easting and northing</a> planar coordinate pair in that zone. The <a href="https://en.wikipedia.org/wiki/Origin_(mathematics" target="_blank">point of origin</a>) of each UTM zone is the intersection of the equator and the zone&apos;s central meridian. To avoid dealing with negative numbers, the central meridian of each zone is defined to coincide with 500000 meters East. In any zone a point that has an easting of 400000 meters is about 100 km west of the central meridian. For most such points, the true distance would be slightly more than 100 km as measured on the surface of the Earth because of the distortion of the projection. UTM eastings range from about 167000 meters to 833000 meters at the equator.</p>
+<p>In the northern hemisphere positions are measured northward from zero at the equator. The maximum &quot;northing&quot; value is about 9300000 meters at latitude 84 degrees North, the north end of the UTM zones. In the southern hemisphere northings decrease southward from the equator, set at 10000000 meters, to about 1100000 meters at 80 degrees South, the south end of the UTM zones. For the southern hemisphere, its northing at the equator is set at 10000000 meters so no point has a negative northing value.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/CN_Tower" target="_blank">CN Tower</a> is at <a href="https://tools.wmflabs.org/geohack/geohack.php?pagename=Universal_Transverse_Mercator_coordinate_system&amp;params=43_38_33.24_N_79_23_13.7_W_&amp;title=CN+Tower" target="_blank">43&#xB0;38&#x2032;33.24&#x2033;N 79&#xB0;23&#x2032;13.7&#x2033;W</a>, which is in UTM zone 17, and the grid position is 630084 m east, 4833438 m north. Two points in Zone 17 have these coordinates, one in the northern hemisphere and one in the south; one of two conventions is used to say which:</p>
+<ol>
+<li>Append a hemisphere designator to the zone number, &quot;N&quot; or &quot;S&quot;, thus &quot;17N 630084 4833438&quot;. This supplies the minimum information to define the position uniquely.</li>
+<li>Supply the grid zone, i.e., the latitude band designator appended to the zone number, thus &quot;17T 630084 4833438&quot;. The provision of the latitude band along with northing supplies redundant information (which may, as a consequence, be contradictory if misused).</li>
+</ol>
+<p>Because latitude band &quot;S&quot; is in the northern hemisphere, a designation such as &quot;38S&quot; is unclear. The &quot;S&quot; might refer to the latitude band (<a href="https://en.wikipedia.org/wiki/32nd_parallel_north" target="_blank">32&#xB0;N</a>&#x2013;<a href="https://en.wikipedia.org/wiki/40th_parallel_north" target="_blank">40&#xB0;N</a>) or it might mean &quot;South&quot;. It is therefore important to specify which convention is being used, e.g., by spelling out the hemisphere, &quot;North&quot; or &quot;South&quot;, or using different symbols, such as &#x2212; for south and + for north.</p>
+<p><strong>Simplified formulae</strong>[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=10" target="_blank">edit</a>]</p>
+<p>These formulae are truncated version of <a href="https://en.wikipedia.org/w/index.php?title=Transverse_Mercator:_flattening_series&amp;action=edit&amp;redlink=1" target="_blank">Transverse Mercator: flattening series</a>, which were originally derived by <a href="https://en.wikipedia.org/wiki/Johann_Heinrich_Louis_Kr&#xFC;ger" target="_blank">Johann Heinrich Louis Kr&#xFC;ger</a> in 1912.<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-kruger-9" target="_blank">[9]</a> They are accurate to around a <a href="https://en.wikipedia.org/wiki/Millimeter" target="_blank">millimeter</a> within 3,000 km of the central meridian.<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-karney-10" target="_blank">[10]</a> Concise commentaries for their derivation have also been given.<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-kawase2012-11" target="_blank">[11]</a><a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-kawase2011-12" target="_blank">[12]</a></p>
+<p>The <a href="https://en.wikipedia.org/wiki/WGS_84" target="_blank">WGS 84</a> <a href="https://en.wikipedia.org/wiki/Spatial_reference_system" target="_blank">spatial reference system</a> describes Earth as an <a href="https://en.wikipedia.org/wiki/Oblate_spheroid" target="_blank">oblate spheroid</a> along north-south axis with an <a href="https://en.wikipedia.org/wiki/Equatorial_radius" target="_blank">equatorial radius</a> of $$ a=6378.137$$ km and an inverse <a href="https://en.wikipedia.org/wiki/Flattening" target="_blank">flattening</a> of $$1/f=298.257 223 563$$. Let&apos;s take a point of latitude  $$\varphi$$ and of longitude $$\lambda$$ and compute its UTM coordinates as well as <a href="https://en.wikipedia.org/wiki/Transverse_Mercator_projection#Point_scale" target="_blank">point scale factor</a> $$k$$ and <a href="https://en.wikipedia.org/wiki/Transverse_Mercator_projection#Convergence" target="_blank">meridian convergence</a> $$\gamma$$ using a reference meridian of longitude . By convention, in the <a href="https://en.wikipedia.org/wiki/Northern_hemisphere" target="_blank">northern hemisphere</a> $$N_0=0$$km and in the <a href="https://en.wikipedia.org/wiki/Southern_hemisphere" target="_blank">southern hemisphere</a> $$N_0=10000$$ km. By convention also $$k_0=0.9996$$and $$E_0=500$$ km.</p>
+<p>In the following formulas, the distances are in <a href="https://en.wikipedia.org/wiki/Kilometer" target="_blank">kilometers</a>. In advance, let&apos;s compute some preliminary values:</p>
+<p>$$n=\frac{f}{2-f}, A=\frac{a}{1+n}\big(1+\frac{n^2}{4}+\frac{n^4}{64}+\cdots\big), $$</p>
+<p>$$ \alpha_1=\frac{1}{2}n-\frac{2}{3}n^2+\frac{5}{16}n^3,\alpha_2=\frac{13}{48}n^2-\frac{3}{5}n^3, \alpha_3=\frac{61}{240}n^3,$$</p>
+<p>$$   \beta_1=\frac{1}{2}n-\frac{2}{3}n^2+\frac{37}{96}n^3,\beta_2=\frac{1}{48}n^2+\frac{1}{15}n^3,\beta_3=\frac{17}{480}n^3, $$</p>
+<p>$$  \delta_1=2n-\frac{2}{3}n^2-2n^3,\delta_2=\frac{7}{3}n^2-\frac{8}{5}n^3,\delta_3=\frac{56}{15}n^3.$$</p>
+<p><strong>From latitude, longitude (<em>&#x3C6;</em>,<em>&#x3BB;</em>) to UTM coordinates (E, N)</strong>[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=11" target="_blank">edit</a>]</p>
+<p>First let&apos;s compute some intermediate values:</p>
+<p>$$ t=\sinh\big(\tanh^{-1}\sin\varphi-\frac{2\sqrt{n}}{1+n}tanh^{-1}(\frac{2\sqrt{n}}{1+n}\sin\varphi) \big),$$</p>
+<p>$$\xi^\prime=\tan^{-1}\big(\frac{t}{\cos(\lambda-\lambda_0)}\big),\eta^\prime=\tanh^{-1}\big(\frac{\sin(\lambda-\lambda_0)}{\sqrt{1+t^2}}\big),$$</p>
+<p>$$\sigma=1+\displaystyle\sum<em>{j=1}^3{2j\alpha_j\cos(2j\xi^\prime)\cosh(2j\eta^\prime)},\tau=\displaystyle\sum</em>{j=1}^3{2j\alpha_j\sin(2j\xi^\prime)\sinh(2j\eta^\prime)}$$</p>
+<p>The final formulae are:</p>
+<p>$$E=E<em>0+k_0A\bigg(\eta^\prime+\displaystyle\sum</em>{j=1}^3{\alpha_j\cos(2j\xi^\prime)\sinh(2j\eta^\prime)}\bigg)$$</p>
+<p>$$N=N<em>0+k_0A\bigg(\xi^\prime+\displaystyle\sum</em>{j=1}^3{\alpha_j\sin(2j\xi^\prime)\cosh(2j\eta^\prime)}\bigg)$$</p>
+<p>$$k=\frac{k_0A}{a}\sqrt{{1+\bigg(\frac{1-n}{1+n}\tan\varphi\bigg)^2}\frac{\sigma^2+\tau^2}{t^2+\cos^2(\lambda-\lambda_0)}},$$</p>
+<p>$$\gamma=\tan^{-1}\bigg(\frac{\tau\sqrt{1+t^2}+\sigma t\tan(\lambda-\lambda_0)}{\sigma\sqrt{1+t^2}-\tau t\tan(\lambda-\lambda_0)}\bigg)$$</p>
+<p><strong>From UTM coordinates (E, N, Zone, Hemi) to latitude, longitude (&#x3C6;, &#x3BB;)</strong>[<a href="https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&amp;action=edit&amp;section=12" target="_blank">edit</a>]</p>
+<p>Note: Hemi=+1 for Northern, Hemi=-1 for Southern</p>
+<p>First let&apos;s compute some intermediate values:</p>
+<p>$$\xi=\frac{N-N_0}{k_0A},\eta=\frac{E-E_0}{k_0A},$$</p>
+<p>$$\xi^\prime=\xi-\displaystyle\sum<em>{j=1}^3{\beta_j\sin(2j\xi)\cosh(2j\eta)},\eta^\prime=\eta-\displaystyle\sum</em>{j=1}^3{\beta_j\cos(2j\xi)\sinh(2j\eta)},$$</p>
+<p>$$\sigma^\prime=1-\displaystyle\sum<em>{j=1}^3{2j\beta_j\cos(2j\xi)\cosh(2j\eta)},\tau^\prime=\displaystyle\sum</em>{j=1}^3{2j\beta_j\sin(2j\xi)\sinh(2j\eta)},$$</p>
+<p>$$\chi=\sin^{-1}\big(\frac{\sin\xi^\prime}{\cosh\eta^\prime}\big).$$</p>
+<p>The final formulae are:</p>
+<p>$$\varphi = \chi+\displaystyle\sum_{j=1}^3{\sigma_j\sin(2j\chi)},$$</p>
+<p>$$\lambda_0=Zone\ast6\degree-183\degree$$</p>
+<p>$$\lambda=\lambda_0+\tan^{-1}\big(\frac{\sinh\eta^\prime}{\cos\xi^\prime}\big)$$</p>
+<p>$$k=\frac{k_0A}{a}\sqrt{{1+{(\frac{1-n}{1+n}\tan\varphi)}^2}\frac{\cos^2\xi^\prime+\sinh^2\eta^\prime}{ {\sigma^\prime}^2+{\tau^\prime}^2}},$$</p>
+<p>$$\gamma=Hemi*\tan^{-1}\big(\frac{\tau^\prime+\sigma^\prime \tan\xi^\prime\tanh\eta^\prime}{\sigma^\prime-\tau^\prime\tan\xi^\prime\tanh\eta^\prime}\big)$$</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Chapter 2 坐标系转换">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Section2.1 UTM to WGS84 BLH","level":"1.5.2.1","depth":3,"previous":{"title":"Chapter 2 坐标系转换","level":"1.5.2","depth":2,"path":"part04_rs/cpt02_coord_sys_conversion/README.md","ref":"part04_rs/cpt02_coord_sys_conversion/README.md","articles":[{"title":"Section2.1 UTM to WGS84 BLH","level":"1.5.2.1","depth":3,"path":"part04_rs/cpt02_coord_sys_conversion/01_utm_to_wgs84blh.md","ref":"part04_rs/cpt02_coord_sys_conversion/01_utm_to_wgs84blh.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part04_rs/cpt02_coord_sys_conversion/01_utm_to_wgs84blh.md","mtime":"2022-01-16T16:09:02.472Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-26T04:25:23.420Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
