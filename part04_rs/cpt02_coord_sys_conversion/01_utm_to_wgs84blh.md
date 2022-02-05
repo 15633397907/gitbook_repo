@@ -1,4 +1,4 @@
-# Section2.1 UTM to WGS84 BLH
+# Section.1 UTM to WGS84 BLH
 
 ## History
 
@@ -12,7 +12,7 @@ Definitions[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transver
 
 **UTM zone**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=3)]
 
-<img src="pics/utm_wgs84blh_pic_01.png" alt="img"  />
+<img src="pics/utm_wgs84blh_pic_01.png" alt="UTM Zones"  />
 
 Simplified view of [contiguous US](https://en.wikipedia.org/wiki/Contiguous_United_States) UTM zones, projected with Lambert conformal conic.
 
@@ -24,7 +24,7 @@ In each zone the scale factor of the central meridian reduces the diameter of th
 
 **Overlapping grids**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=4)]
 
-<img src="pics/utm_wgs84blh_pic_02.png" alt="img"  />
+<img src="pics/utm_wgs84blh_pic_02.png" alt="?"  />
 
 Universal Transverse Mercator (UTM) Grid Zones 31N thru 37N differ from the standard 6° wide by 84° zone for the northern hemisphere, in part to accommodate the southern half of the Kingdom of Norway. For more on its history, see Clifford J. Mugnier's article on Grids & Datums of The Kingdom of Norway that appeared in the October 1999 issue of PE&RS http://www.asprs.org/a/resources/grids/10-99-norway.pdf
 
@@ -52,19 +52,19 @@ These grid zones are uniform over the globe, except in two areas. On the southwe
 
 - **Grid zones in various parts of the world**
 
-<img src="pics/utm_wgs84blh_pic_03.png" alt="img"  />
+<img src="pics/utm_wgs84blh_pic_03.png" alt="Europe"  />
 
 Europe
 
-<img src="pics/utm_wgs84blh_pic_04.png" alt="img"  />
+<img src="pics/utm_wgs84blh_pic_04.png" alt="Africa"  />
 
 Africa 
 
-<img src="pics/utm_wgs84blh_pic_05.png" alt="img"  />
+<img src="pics/utm_wgs84blh_pic_05.png" alt="South America"  />
 
 South America 
 
-<img src="pics/utm_wgs84blh_pic_06.png" alt="img"  />
+<img src="pics/utm_wgs84blh_pic_06.png" alt="Bering Sea with Alaska"  />
 
 Bering Sea with Alaska
 

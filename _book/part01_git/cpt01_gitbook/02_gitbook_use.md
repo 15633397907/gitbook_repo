@@ -1,4 +1,4 @@
-# gitbook 命令
+# Section.2 gitbook 命令
 
 gitbook init 命令只是用来创建readme.md和SUMMARY.md两个文档，如果代码出错，直接创建连个代码，然后使用gitbook build即可。
 
@@ -23,5 +23,12 @@ gitbook init 命令只是用来创建readme.md和SUMMARY.md两个文档，如果
 
 解决方法是在两个`{`之间添加一个空格，即`{ {`，即可解决问题。
 
+安装calibre，并确定安装目录（如：C:\Program Files (x86)\Calibre2）已经被添加到环境变量中后（首次添加可能需要重启），输入以下命令可以生成相应格式的文件。
+
+```
+gitbook pdf     //生成pdf
+gitbook epub    //生成epub ?
+gitbook mobi    //生成mobi ?
+```
 
 

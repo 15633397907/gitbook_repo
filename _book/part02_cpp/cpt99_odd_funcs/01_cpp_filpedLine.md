@@ -1,4 +1,4 @@
-# Section99.1 转动的线
+# Section.1 转动的线
 
 ```
 	#include<Windows.h>

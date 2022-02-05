@@ -1,4 +1,4 @@
-# gitbook安装
+# Section.1 gitbook安装
 
 1.安装
 
@@ -35,10 +35,6 @@ gitbook init 命令只是用来创建readme.md和SUMMARY.md两个文档，如果
 
 gitbook fetch 3.2.3  
 
-gitbook fetch 3.0.0
+gitbook fetch 2.6.7
 
 等命令可以下载对应的版本
-
-以管理员身份启动cmd，可以避免很多问题
-
-对于3.2.3等高版本build后的电子书侧边栏无法使用的问题，可以通过安装3.0.0版本，gitbook build --gitbook=3.0.0解决（但侧边栏的节点跳转问题还没有解决）

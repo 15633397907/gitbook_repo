@@ -1,4 +1,4 @@
-# git pull & clone
+# Section.2 git pull & clone
 
 使用git命令下拉远程库。
 

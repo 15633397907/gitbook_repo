@@ -1,0 +1,981 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Section.1 主辅影像配准 · My nodebook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="litan<402512849@qq.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02_insar_resample.html" />
+    
+    
+    <link rel="prev" href="00_README.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="402512849@qq.com" target="_blank" class="custom-link">Litan's eMail</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../part01_git/cpt00_README.html">
+            
+                <a href="../../part01_git/cpt00_README.html">
+            
+                    
+                    Part 1 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../part01_git/cpt01_gitbook/00_README.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/00_README.html">
+            
+                    
+                    Chapter 1 gitbook使用心得
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../part01_git/cpt01_gitbook/01_gitbook_install.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/01_gitbook_install.html">
+            
+                    
+                    Section.1 gitbook安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../part01_git/cpt01_gitbook/02_gitbook_use.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/02_gitbook_use.html">
+            
+                    
+                    Section.2 gitbook命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../part01_git/cpt01_gitbook/03_gitbook_plugins.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/03_gitbook_plugins.html">
+            
+                    
+                    Section.3 gitbook添加插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../part01_git/cpt01_gitbook/04_gitbook_sidebar.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/04_gitbook_sidebar.html">
+            
+                    
+                    Section.4 gitbook侧边栏导航问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../part01_git/cpt02_git/00_README.html">
+            
+                <a href="../../part01_git/cpt02_git/00_README.html">
+            
+                    
+                    Chapter 2 git使用心得
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../part01_git/cpt02_git/01_git_command.html">
+            
+                <a href="../../part01_git/cpt02_git/01_git_command.html">
+            
+                    
+                    Section.1 git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../part01_git/cpt02_git/02_git_pull_clone.html">
+            
+                <a href="../../part01_git/cpt02_git/02_git_pull_clone.html">
+            
+                    
+                    Section.2 git下拉远程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../part01_git/cpt03_md/00_README.html">
+            
+                <a href="../../part01_git/cpt03_md/00_README.html">
+            
+                    
+                    Chapter 3 MarkDown语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../part01_git/cpt03_md/01_md_usual.html">
+            
+                <a href="../../part01_git/cpt03_md/01_md_usual.html">
+            
+                    
+                    Section.1 常规用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../part01_git/cpt03_md/02_md_latex.html">
+            
+                <a href="../../part01_git/cpt03_md/02_md_latex.html">
+            
+                    
+                    Section.2 LaTeX语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../part02_cpp/cpt00_README.html">
+            
+                <a href="../../part02_cpp/cpt00_README.html">
+            
+                    
+                    Part 2 C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../part02_cpp/cpt01_std/00_README.html">
+            
+                <a href="../../part02_cpp/cpt01_std/00_README.html">
+            
+                    
+                    Chapter 1 STD库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../part02_cpp/cpt01_std/01_cpp_LINUX_WIN32.html">
+            
+                <a href="../../part02_cpp/cpt01_std/01_cpp_LINUX_WIN32.html">
+            
+                    
+                    Section.1 WIN32 -> LINUX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../part02_cpp/cpt01_std/02_cpp_fstream.html">
+            
+                <a href="../../part02_cpp/cpt01_std/02_cpp_fstream.html">
+            
+                    
+                    Section.2 fstream读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../part02_cpp/cpt01_std/03_cpp_stringSplit.html">
+            
+                <a href="../../part02_cpp/cpt01_std/03_cpp_stringSplit.html">
+            
+                    
+                    Section.3 string分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../part02_cpp/cpt01_std/04_cpp_filpedLine.html">
+            
+                <a href="../../part02_cpp/cpt01_std/04_cpp_filpedLine.html">
+            
+                    
+                    Section.4 转动的线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../part02_cpp/cpt02_gdal/00_README.html">
+            
+                <a href="../../part02_cpp/cpt02_gdal/00_README.html">
+            
+                    
+                    Chapter 2 GDAL库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../part02_cpp/cpt03_opencv/00_README.html">
+            
+                <a href="../../part02_cpp/cpt03_opencv/00_README.html">
+            
+                    
+                    Chapter 3 OPENCV库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../part02_cpp/cpt04_tinyxml.html">
+            
+                <a href="../../part02_cpp/cpt04_tinyxml.html">
+            
+                    
+                    Chapter 4 TINYXML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../part02_cpp/cpt05_eigen/00_README.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/00_README.html">
+            
+                    
+                    Chapter 5 EIGEN库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../part02_cpp/cpt05_eigen/01_eigen_init.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/01_eigen_init.html">
+            
+                    
+                    Section.1 基础操作预留1-20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../part02_cpp/cpt05_eigen/02_eigen_compare_with_matlab.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/02_eigen_compare_with_matlab.html">
+            
+                    
+                    Section.2 与Matlab命令对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../../part02_cpp/cpt05_eigen/03_eigen_interp.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/03_eigen_interp.html">
+            
+                    
+                    Section.3 Eigen的矩阵插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../../part02_cpp/cpt05_eigen/21_eigen_linear_algebra.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/21_eigen_linear_algebra.html">
+            
+                    
+                    Section.21 线性问题预留21-40
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../../part02_cpp/cpt05_eigen/41_eigen_Sparse_matrix.html">
+            
+                <a href="../../part02_cpp/cpt05_eigen/41_eigen_Sparse_matrix.html">
+            
+                    
+                    Section.41 稀疏矩阵预留41-..
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../part02_cpp/cpt99_odd_funcs/00_README.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/00_README.html">
+            
+                    
+                    Chapter 99？ 无关的C++函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../part02_cpp/cpt99_odd_funcs/01_cpp_filpedLine.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/01_cpp_filpedLine.html">
+            
+                    
+                    Section.1 转动的线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../part02_cpp/cpt99_odd_funcs/02_cpp_binary_float_IO.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/02_cpp_binary_float_IO.html">
+            
+                    
+                    Section.2 二进制float读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../part02_cpp/cpt99_odd_funcs/03_cpp_mat_IO.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/03_cpp_mat_IO.html">
+            
+                    
+                    Section.3 mat读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../../part02_cpp/cpt99_odd_funcs/04_cpp_for_processBar.html">
+            
+                <a href="../../part02_cpp/cpt99_odd_funcs/04_cpp_for_processBar.html">
+            
+                    
+                    Section.4 for循环进度条
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../part03_qt/cpt00_README.html">
+            
+                <a href="../../part03_qt/cpt00_README.html">
+            
+                    
+                    Part 3 Qt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../part03_qt/cpt01_landapp/00_README.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/00_README.html">
+            
+                    
+                    Chapter 1 LandApp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../part03_qt/cpt01_landapp/01_landapp_core.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/01_landapp_core.html">
+            
+                    
+                    Section.1 LandApp/Core工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../part03_qt/cpt01_landapp/02_landapp_another.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/02_landapp_another.html">
+            
+                    
+                    Section.2 LandApp/其他工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../part03_qt/cpt01_landapp/03_landapp_landsarwnd.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/03_landapp_landsarwnd.html">
+            
+                    
+                    Section.3 LandApp/LadnSARWnd主界面生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../cpt00_README.html">
+            
+                <a href="../cpt00_README.html">
+            
+                    
+                    Part 4 RemoteSensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../cpt01_img_processing/00_README.html">
+            
+                <a href="../cpt01_img_processing/00_README.html">
+            
+                    
+                    Chapter 1 图像处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../cpt01_img_processing/01_rg_filter.html">
+            
+                <a href="../cpt01_img_processing/01_rg_filter.html">
+            
+                    
+                    Section.1 RG滤波
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../cpt01_img_processing/02_image_resampling.html">
+            
+                <a href="../cpt01_img_processing/02_image_resampling.html">
+            
+                    
+                    Section.2 影像重采样
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../cpt02_coord_sys_conversion/00_README.html">
+            
+                <a href="../cpt02_coord_sys_conversion/00_README.html">
+            
+                    
+                    Chapter 2 坐标系转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../cpt02_coord_sys_conversion/01_utm_to_wgs84blh.html">
+            
+                <a href="../cpt02_coord_sys_conversion/01_utm_to_wgs84blh.html">
+            
+                    
+                    Section.1 UTM to WGS84 BLH
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="00_README.html">
+            
+                <a href="00_README.html">
+            
+                    
+                    Chapter 3 InSAR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.3.1" data-path="01_insar_regist.html">
+            
+                <a href="01_insar_regist.html">
+            
+                    
+                    Section.1 主辅影像配准
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="02_insar_resample.html">
+            
+                <a href="02_insar_resample.html">
+            
+                    
+                    Section.2 辅影像重采样
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="03_insar_int.html">
+            
+                <a href="03_insar_int.html">
+            
+                    
+                    Section.3 主辅影像干涉
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Section.1 主辅影像配准</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="section2-&#x4E3B;&#x8F85;&#x5F71;&#x50CF;&#x914D;&#x51C6;">Section.2 &#x4E3B;&#x8F85;&#x5F71;&#x50CF;&#x914D;&#x51C6;</h1>
+<h2 id="&#x76F8;&#x5173;&#x7CFB;&#x6570;&#x6CD5;">&#x76F8;&#x5173;&#x7CFB;&#x6570;&#x6CD5;</h2>
+<p>&#x76F8;&#x5173;&#x7CFB;&#x6570;&#x6CD5;&#x662F;&#x56FE;&#x50CF;&#x914D;&#x51C6;&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x6A21;&#x677F;&#x6216;&#x6A21;&#x5F0F;&#x7684;&#x5339;&#x914D;(?)&#xFF0C;&#x662F;&#x5F88;&#x591A;&#x914D;&#x51C6;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x5339;&#x914D;&#x53C2;&#x6570;&#x4F4D;&#x7F6E;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x76F8;&#x5173;&#x51FD;&#x6570;&#x6CD5;&#x80FD;&#x591F;&#x7ED9;&#x51FA;&#x56FE;&#x50CF;&#x4E4B;&#x95F4;&#x603B;&#x4F53;&#x914D;&#x51C6;&#x7ED3;&#x679C;&#xFF0C;&#x4ECE;&#x800C;&#x4E3A;&#x5176;&#x4ED6;&#x9AD8;&#x7CBE;&#x5EA6;&#x7684;&#x914D;&#x51C6;&#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x57FA;&#x51C6;&#x70B9;&#x3002;&#x5BF9;&#x4E8E;&#x5E72;&#x6D89;SAR&#x56FE;&#x50CF;&#x7684;&#x914D;&#x51C6;&#xFF0C;&#x76F8;&#x5173;&#x53EF;&#x4EE5;&#x5728;&#x590D;&#x6570;&#x57DF;&#x8FDB;&#x884C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4EC5;&#x4EC5;&#x5229;&#x7528;&#x5E45;&#x5EA6;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x914D;&#x51C6;&#x3002;</p>
+<p><strong>&#x5BF9;&#x4E8E;&#x76F8;&#x5E72;&#x6591;&#x566A;&#x58F0;&#x6BD4;&#x8F83;&#x4E25;&#x91CD;&#x7684;SAR&#x56FE;&#x50CF;&#xFF0C;&#x5E45;&#x5EA6;&#x76F8;&#x5173;&#x8981;&#x597D;&#x4E8E;&#x590D;&#x6570;&#x636E;&#x76F8;&#x5173;&#x3002;</strong></p>
+<h3 id="&#x5E45;&#x5EA6;&#x4E92;&#x76F8;&#x5173;">&#x5E45;&#x5EA6;&#x4E92;&#x76F8;&#x5173;</h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>(</mo><msup><mi>u</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo separator="true">,</mo><msup><mi>v</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo>)</mo><mo>=</mo><mfrac><mrow><mstyle scriptlevel="0" displaystyle="true"><msub><mo>&#x2211;</mo><mi>i</mi></msub><msub><mo>&#x2211;</mo><mi>j</mi></msub><msub><mi>M</mi><mn>1</mn></msub><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo><msub><mi>M</mi><mn>2</mn></msub><mo>(</mo><mi>i</mi><mo>+</mo><msup><mi>u</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo separator="true">,</mo><mi>j</mi><mo>+</mo><msup><mi>v</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo>)</mo></mstyle></mrow><mrow><msqrt><mrow><mstyle scriptlevel="0" displaystyle="true"><msub><mo>&#x2211;</mo><mi>i</mi></msub><msub><mo>&#x2211;</mo><mi>j</mi></msub><msubsup><mi>M</mi><mn>1</mn><mn>2</mn></msubsup><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo></mstyle></mrow></msqrt><mo>&#x2217;</mo><msqrt><mrow><mstyle scriptlevel="0" displaystyle="true"><msub><mo>&#x2211;</mo><mi>i</mi></msub><msub><mo>&#x2211;</mo><mi>j</mi></msub><msubsup><mi>M</mi><mn>2</mn><mn>2</mn></msubsup><mo>(</mo><mi>i</mi><mo>+</mo><msup><mi>u</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo separator="true">,</mo><mi>j</mi><mo>+</mo><msup><mi>v</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo>)</mo></mstyle></mrow></msqrt></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+R(u&apos;,v&apos;)=\frac{\displaystyle\sum_i\sum_jM_1(i,j)M_2(i+u&apos;,j+v&apos;)}{\sqrt{\displaystyle\sum_i\sum_jM_1^2(i,j)}*\sqrt{\displaystyle\sum_i\sum_jM_2^2(i+u&apos;,j+v&apos;)}} 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:2.8537820000000007em;"></span><span class="strut bottom" style="height:5.783812000000001em;vertical-align:-2.9300300000000004em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">u</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose">)</span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:1.2931290000000002em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord sqrt"><span class="sqrt-sign" style="top:0.3868710000000002em;"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing size4">&#x221A;</span></span></span><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="mord textstyle cramped"><span class="mop op-limits reset-textstyle displaystyle textstyle uncramped"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mop op-limits reset-textstyle displaystyle textstyle uncramped"><span class="vlist"><span style="top:1.177669em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-0.000005000000000032756em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist"><span style="top:0.247em;margin-left:-0.10903em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen reset-textstyle displaystyle textstyle uncramped">(</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped">i</span><span class="mpunct reset-textstyle displaystyle textstyle uncramped">,</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped" style="margin-right:0.05724em;">j</span><span class="mclose reset-textstyle displaystyle textstyle uncramped">)</span></span></span><span style="top:-1.3231289999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="reset-textstyle textstyle uncramped sqrt-line"></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mbin">&#x2217;</span><span class="mord sqrt"><span class="sqrt-sign" style="top:0.3868710000000002em;"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing size4">&#x221A;</span></span></span><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="mord textstyle cramped"><span class="mop op-limits reset-textstyle displaystyle textstyle uncramped"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mop op-limits reset-textstyle displaystyle textstyle uncramped"><span class="vlist"><span style="top:1.177669em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-0.000005000000000032756em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist"><span style="top:0.247em;margin-left:-0.10903em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen reset-textstyle displaystyle textstyle uncramped">(</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped">i</span><span class="mbin reset-textstyle displaystyle textstyle uncramped">+</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit">u</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mpunct reset-textstyle displaystyle textstyle uncramped">,</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped" style="margin-right:0.05724em;">j</span><span class="mbin reset-textstyle displaystyle textstyle uncramped">+</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose reset-textstyle displaystyle textstyle uncramped">)</span></span></span><span style="top:-1.3231289999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="reset-textstyle textstyle uncramped sqrt-line"></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-1.8037770000000002em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mop op-limits reset-textstyle displaystyle textstyle uncramped"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mop op-limits reset-textstyle displaystyle textstyle uncramped"><span class="vlist"><span style="top:1.177669em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-0.000005000000000032756em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.10903em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen reset-textstyle displaystyle textstyle uncramped">(</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped">i</span><span class="mpunct reset-textstyle displaystyle textstyle uncramped">,</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped" style="margin-right:0.05724em;">j</span><span class="mclose reset-textstyle displaystyle textstyle uncramped">)</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.10903em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen reset-textstyle displaystyle textstyle uncramped">(</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped">i</span><span class="mbin reset-textstyle displaystyle textstyle uncramped">+</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit">u</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mpunct reset-textstyle displaystyle textstyle uncramped">,</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped" style="margin-right:0.05724em;">j</span><span class="mbin reset-textstyle displaystyle textstyle uncramped">+</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose reset-textstyle displaystyle textstyle uncramped">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></p>
+<p>&#x5F0F;&#x4E2D;&#xFF0C;$M_1(i,j)$ &#x548C; $M_2(i,j)$&#x5206;&#x522B;&#x662F;&#x4E24;&#x666F;&#x5F71;&#x50CF;&#x7684;&#x5E45;&#x5EA6;&#x4FE1;&#x606F;&#xFF0C;$u&apos;$&#x548C;$v&apos;$&#x5206;&#x522B;&#x4E3A;&#x8DDD;&#x79BB;&#x5411;&#x548C;&#x65B9;&#x4F4D;&#x5411;&#x7684;&#x504F;&#x79FB;&#x91CF;&#xFF0C;&#x76F8;&#x5173;&#x7CFB;&#x6570;&#x6700;&#x5927;&#x5904;$R(u&apos;,v&apos;)$&#x7684;$u&apos;$&#x548C;$v&apos;$&#x503C;&#x5373;&#x4E3A;&#x914D;&#x51C6;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<h3 id="&#x590D;&#x6570;&#x76F8;&#x5173;">&#x590D;&#x6570;&#x76F8;&#x5173;</h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>(</mo><msup><mi>u</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo separator="true">,</mo><msup><mi>v</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo>)</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><msub><mo>&#x2211;</mo><mi>i</mi></msub><msub><mo>&#x2211;</mo><mi>j</mi></msub><msub><mi>S</mi><mn>1</mn></msub><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo><mo>&#x2217;</mo><msubsup><mi>S</mi><mn>2</mn><mo>&#x2217;</mo></msubsup><mo>(</mo><mi>i</mi><mo>+</mo><msup><mi>u</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo separator="true">,</mo><mi>j</mi><mo>+</mo><msup><mi>v</mi><mrow><mi mathvariant="normal">&#x2032;</mi></mrow></msup><mo>)</mo></mstyle></mrow><annotation encoding="application/x-tex">
+R(u&apos;,v&apos;)=\displaystyle\sum_i\sum_jS_1(i,j)*S_2^*(i+u&apos;,j+v&apos;)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.0500050000000003em;"></span><span class="strut bottom" style="height:2.463782em;vertical-align:-1.413777em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">u</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose">)</span><span class="mrel">=</span><span class="mop op-limits reset-textstyle displaystyle textstyle uncramped"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mop op-limits reset-textstyle displaystyle textstyle uncramped"><span class="vlist"><span style="top:1.177669em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-0.000005000000000032756em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen reset-textstyle displaystyle textstyle uncramped">(</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped">i</span><span class="mpunct reset-textstyle displaystyle textstyle uncramped">,</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped" style="margin-right:0.05724em;">j</span><span class="mclose reset-textstyle displaystyle textstyle uncramped">)</span><span class="mbin reset-textstyle displaystyle textstyle uncramped">&#x2217;</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.247em;margin-left:-0.05764em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mbin mtight">&#x2217;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen reset-textstyle displaystyle textstyle uncramped">(</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped">i</span><span class="mbin reset-textstyle displaystyle textstyle uncramped">+</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit">u</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mpunct reset-textstyle displaystyle textstyle uncramped">,</span><span class="mord mathit reset-textstyle displaystyle textstyle uncramped" style="margin-right:0.05724em;">j</span><span class="mbin reset-textstyle displaystyle textstyle uncramped">+</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x2032;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose reset-textstyle displaystyle textstyle uncramped">)</span></span></span></span></span></p>
+<p>&#x5F0F;&#x4E2D;&#xFF0C;$S_1(i,j)$ &#x548C; $S_2(i,j)$&#x5206;&#x522B;&#x662F;&#x4E24;&#x666F;&#x5F71;&#x50CF;&#x7684;&#x590D;&#x6570;&#x4FE1;&#x606F;&#xFF0C;$S_2^*(i,j)$&#x4E3A;&#x539F;&#x5F71;&#x50CF;&#x7684;&#x5171;&#x8F6D;&#x77E9;&#x9635;&#xFF0C;$u&apos;$&#x548C;$v&apos;$&#x5206;&#x522B;&#x4E3A;&#x8DDD;&#x79BB;&#x5411;&#x548C;&#x65B9;&#x4F4D;&#x5411;&#x7684;&#x504F;&#x79FB;&#x91CF;&#xFF0C;&#x76F8;&#x5173;&#x7CFB;&#x6570;&#x6700;&#x5927;&#x5904;$R(u&apos;,v&apos;)$&#x7684;$u&apos;$&#x548C;$v&apos;$&#x503C;&#x5373;&#x4E3A;&#x914D;&#x51C6;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x4F7F;&#x7528;FFT&#x52A0;&#x901F;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;</p>
+<p>&#x4F7F;&#x7528;FFT&#x53D8;&#x6362;&#x5C06;$S_1(i,j)$ &#x548C; $S_2(i,j)$&#x53D8;&#x6362;&#x5230;&#x9891;&#x57DF;&#xFF0C;&#x5F97;&#x5230;$S_1(m,n)$ &#x548C; $S_2(m,n)&#xFF0C;&#x5728;&#x9891;&#x57DF;&#x4E2D;&#x6709;&#xFF1A;</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mi>F</mi><mi>T</mi><mo>(</mo><mi>R</mi><mo>)</mo><mo>=</mo><msub><mi>S</mi><mn>1</mn></msub><mo>(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>&#x2217;</mo><msubsup><mi>S</mi><mn>2</mn><mo>&#x2217;</mo></msubsup><mo>(</mo><mi>m</mi><mo separator="true">,</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">
+FFT(R)=S_1(m,n)*S_2^*(m,n)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen">(</span><span class="mord mathit">m</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mbin">&#x2217;</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.247em;margin-left:-0.05764em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span style="top:-0.4129999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mbin mtight">&#x2217;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mopen">(</span><span class="mord mathit">m</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></p>
+<p>&#x5BF9;&#x4E0A;&#x5F0F;&#x8FDB;&#x884C;&#x4E8C;&#x7EF4;&#x9006;FFT&#x53D8;&#x6362;&#x5373;&#x4E3A;$S_1(i,j)$&#x548C;$S_2(i,j)$&#x7684;&#x4E92;&#x76F8;&#x5173;&#x51FD;&#x6570;&#xFF0C;&#x5176;&#x6700;&#x5927;&#x503C;&#x5BF9;&#x5E94;&#x7684;&#x4F4D;&#x7F6E;&#x4E3A;&#x914D;&#x51C6;&#x7684;&#x504F;&#x79FB;&#x91CF;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="00_README.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 3 InSAR">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02_insar_resample.html" class="navigation navigation-next " aria-label="Next page: Section.2 辅影像重采样">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Section.1 主辅影像配准","level":"1.5.3.1","depth":3,"next":{"title":"Section.2 辅影像重采样","level":"1.5.3.2","depth":3,"path":"part04_rs/cpt03_insar/02_insar_resample.md","ref":"part04_rs/cpt03_insar/02_insar_resample.md","articles":[]},"previous":{"title":"Chapter 3 InSAR","level":"1.5.3","depth":2,"path":"part04_rs/cpt03_insar/00_README.md","ref":"part04_rs/cpt03_insar/00_README.md","articles":[{"title":"Section.1 主辅影像配准","level":"1.5.3.1","depth":3,"path":"part04_rs/cpt03_insar/01_insar_regist.md","ref":"part04_rs/cpt03_insar/01_insar_regist.md","articles":[]},{"title":"Section.2 辅影像重采样","level":"1.5.3.2","depth":3,"path":"part04_rs/cpt03_insar/02_insar_resample.md","ref":"part04_rs/cpt03_insar/02_insar_resample.md","articles":[]},{"title":"Section.3 主辅影像干涉","level":"1.5.3.3","depth":3,"path":"part04_rs/cpt03_insar/03_insar_int.md","ref":"part04_rs/cpt03_insar/03_insar_int.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","expandable-chapters-small","back-to-top-button","lightbox"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"litan<402512849@qq.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"My nodebook","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Litan's eMail":"402512849@qq.com"}},"gitbook":"*","description":"日常工作中用到的一些技术总结"},"file":{"path":"part04_rs/cpt03_insar/01_insar_regist.md","mtime":"2022-02-03T01:22:29.495Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-05T01:44:57.301Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

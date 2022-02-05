@@ -1,4 +1,4 @@
-# Section99.3 .mat读取
+# Section.3 .mat读取
 
 ## VS工程设置
 >1.VC++目录->包含目录 添加: 
