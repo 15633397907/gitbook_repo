@@ -7,7 +7,8 @@
         "katex",                        
         "expandable-chapters-small",
         "back-to-top-button",     
-        "lightbox"                      
+        "lightbox"
+                      
     ],
     "pdf": {
         "fontSize": 12,
