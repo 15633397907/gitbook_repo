@@ -44,6 +44,14 @@ The least-squares solution is:
 ### QR分解 (QR decomposition)
 
 
+ **HouseholderQR** (no pivoting, fast but unstable if your matrix is not rull rank), **ColPivHouseholderQR** (column pivoting, thus a bit slower but more stable) and **FullPivHouseholderQR** (full pivoting, so slowest and slightly more stable than ColPivHouseholderQR).
+```C++
+MatrixXf A = MatrixXf::Random(3, 2);
+VectorXf b = VectorXf::Random(3);
+cout << "The solution using the QR decomposition is:\n"
+     << A.colPivHouseholderQr().solve(b) << endl;
+```
+
 ### 正规方程 (normal equations)
 
 $$\kern{20 mu}  Ax=b$$ 
@@ -51,3 +59,10 @@ $$\kern{20 mu}  Ax=b$$
 $$\Rightarrow A^TAx=A^Tb $$
 
 $$\Rightarrow x=(A^TA)^{-1}A^Tb$$
+
+```C++
+MatrixXf A = MatrixXf::Random(3, 2);
+VectorXf b = VectorXf::Random(3);
+cout << "The solution using normal equations is:\n"
+     << (A.transpose() * A).ldlt().solve(A.transpose() * b) << endl;
+```

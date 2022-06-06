@@ -18,15 +18,23 @@ $$\phi$$
 
 两种表达方式的相互关系为：
 
-$$\lvert u\rvert={u.real}^2+{u.imag}^2=a^2+b^2$$
+$$
+\lvert u\rvert={u.real}^2+{u.imag}^2=a^2+b^2
+$$
 
-$$\phi=\arctan\frac{u.imag}{u.real}=\arctan\frac{b}{a}$$
+$$
+\phi=\arctan\frac{u.imag}{u.real}=\arctan\frac{b}{a}
+$$
 
 ## 两种表现形式的干涉计算
 
-$$u_1=\lvert u_1\rvert e^{j\phi_1}=a+bi$$
+$$
+u_1=\lvert u_1\rvert e^{j\phi_1}=a+bi
+$$
 
-$$u_1=\lvert u_2\rvert e^{j\phi_2}=c+di$$
+$$
+u_1=\lvert u_2\rvert e^{j\phi_2}=c+di
+$$
 
 ### 强度相位表现形式
 

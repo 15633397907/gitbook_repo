@@ -1,0 +1,1158 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Section.1 单例模式 · My nodebook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="litan<402512849@qq.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../cpt99_odd_funcs/00_README.html" />
+    
+    
+    <link rel="prev" href="00_README.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="402512849@qq.com" target="_blank" class="custom-link">Litan's eMail</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../part01_git/cpt00_README.html">
+            
+                <a href="../../part01_git/cpt00_README.html">
+            
+                    
+                    Part 1 Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../part01_git/cpt01_gitbook/00_README.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/00_README.html">
+            
+                    
+                    Chapter 1 gitbook使用心得
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../part01_git/cpt01_gitbook/01_gitbook_install.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/01_gitbook_install.html">
+            
+                    
+                    Section.1 gitbook安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../part01_git/cpt01_gitbook/02_gitbook_use.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/02_gitbook_use.html">
+            
+                    
+                    Section.2 gitbook命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../part01_git/cpt01_gitbook/03_gitbook_plugins.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/03_gitbook_plugins.html">
+            
+                    
+                    Section.3 gitbook添加插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../part01_git/cpt01_gitbook/04_gitbook_sidebar.html">
+            
+                <a href="../../part01_git/cpt01_gitbook/04_gitbook_sidebar.html">
+            
+                    
+                    Section.4 gitbook侧边栏导航问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../part01_git/cpt02_git/00_README.html">
+            
+                <a href="../../part01_git/cpt02_git/00_README.html">
+            
+                    
+                    Chapter 2 git使用心得
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../part01_git/cpt02_git/01_git_command.html">
+            
+                <a href="../../part01_git/cpt02_git/01_git_command.html">
+            
+                    
+                    Section.1 git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../part01_git/cpt02_git/02_git_pull_clone.html">
+            
+                <a href="../../part01_git/cpt02_git/02_git_pull_clone.html">
+            
+                    
+                    Section.2 git下拉远程库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../part01_git/cpt03_md/00_README.html">
+            
+                <a href="../../part01_git/cpt03_md/00_README.html">
+            
+                    
+                    Chapter 3 MarkDown语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../part01_git/cpt03_md/01_md_usual.html">
+            
+                <a href="../../part01_git/cpt03_md/01_md_usual.html">
+            
+                    
+                    Section.1 常规用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../part01_git/cpt03_md/02_md_latex.html">
+            
+                <a href="../../part01_git/cpt03_md/02_md_latex.html">
+            
+                    
+                    Section.2 LaTeX语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../cpt00_README.html">
+            
+                <a href="../cpt00_README.html">
+            
+                    
+                    Part 2 C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../cpt01_std/00_README.html">
+            
+                <a href="../cpt01_std/00_README.html">
+            
+                    
+                    Chapter 1 STD库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../cpt01_std/01_cpp_LINUX_WIN32.html">
+            
+                <a href="../cpt01_std/01_cpp_LINUX_WIN32.html">
+            
+                    
+                    Section.1 WIN32 -> LINUX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../cpt01_std/02_cpp_fstream.html">
+            
+                <a href="../cpt01_std/02_cpp_fstream.html">
+            
+                    
+                    Section.2 fstream读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../cpt01_std/03_cpp_stringSplit.html">
+            
+                <a href="../cpt01_std/03_cpp_stringSplit.html">
+            
+                    
+                    Section.3 string分割
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../cpt01_std/04_cpp_regex.html">
+            
+                <a href="../cpt01_std/04_cpp_regex.html">
+            
+                    
+                    Section.4 regex正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cpt02_gdal/00_README.html">
+            
+                <a href="../cpt02_gdal/00_README.html">
+            
+                    
+                    Chapter 2 GDAL库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../cpt03_opencv/00_README.html">
+            
+                <a href="../cpt03_opencv/00_README.html">
+            
+                    
+                    Chapter 3 OPENCV库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../cpt04_tinyxml.html">
+            
+                <a href="../cpt04_tinyxml.html">
+            
+                    
+                    Chapter 4 TINYXML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../cpt05_eigen/00_README.html">
+            
+                <a href="../cpt05_eigen/00_README.html">
+            
+                    
+                    Chapter 5 EIGEN库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../cpt05_eigen/01_eigen_init.html">
+            
+                <a href="../cpt05_eigen/01_eigen_init.html">
+            
+                    
+                    Section.1 基础操作预留1-20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../cpt05_eigen/02_eigen_compare_with_matlab.html">
+            
+                <a href="../cpt05_eigen/02_eigen_compare_with_matlab.html">
+            
+                    
+                    Section.2 与Matlab命令对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../cpt05_eigen/03_eigen_interp.html">
+            
+                <a href="../cpt05_eigen/03_eigen_interp.html">
+            
+                    
+                    Section.3 Eigen的矩阵插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../cpt05_eigen/21_eigen_linear_algebra.html">
+            
+                <a href="../cpt05_eigen/21_eigen_linear_algebra.html">
+            
+                    
+                    Section.21 线性问题预留21-40
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../cpt05_eigen/41_eigen_Sparse_matrix.html">
+            
+                <a href="../cpt05_eigen/41_eigen_Sparse_matrix.html">
+            
+                    
+                    Section.41 稀疏矩阵预留41-..
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="00_README.html">
+            
+                <a href="00_README.html">
+            
+                    
+                    Chapter 98？ 设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.6.1" data-path="01_Singleton_Pattern.html">
+            
+                <a href="01_Singleton_Pattern.html">
+            
+                    
+                    Section.1 单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../cpt99_odd_funcs/00_README.html">
+            
+                <a href="../cpt99_odd_funcs/00_README.html">
+            
+                    
+                    Chapter 99？ 无关的C++函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../cpt99_odd_funcs/01_cpp_filpedLine.html">
+            
+                <a href="../cpt99_odd_funcs/01_cpp_filpedLine.html">
+            
+                    
+                    Section.1 转动的线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="../cpt99_odd_funcs/02_cpp_binary_float_IO.html">
+            
+                <a href="../cpt99_odd_funcs/02_cpp_binary_float_IO.html">
+            
+                    
+                    Section.2 二进制float读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3" data-path="../cpt99_odd_funcs/03_cpp_mat_IO.html">
+            
+                <a href="../cpt99_odd_funcs/03_cpp_mat_IO.html">
+            
+                    
+                    Section.3 mat读取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4" data-path="../cpt99_odd_funcs/04_cpp_for_processBar.html">
+            
+                <a href="../cpt99_odd_funcs/04_cpp_for_processBar.html">
+            
+                    
+                    Section.4 for循环进度条
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../part03_qt/cpt00_README.html">
+            
+                <a href="../../part03_qt/cpt00_README.html">
+            
+                    
+                    Part 3 Qt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../part03_qt/cpt01_landapp/00_README.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/00_README.html">
+            
+                    
+                    Chapter 1 LandApp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../part03_qt/cpt01_landapp/01_landapp_core.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/01_landapp_core.html">
+            
+                    
+                    Section.1 LandApp/Core工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../part03_qt/cpt01_landapp/02_landapp_another.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/02_landapp_another.html">
+            
+                    
+                    Section.2 LandApp/其他工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../part03_qt/cpt01_landapp/03_landapp_landsarwnd.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/03_landapp_landsarwnd.html">
+            
+                    
+                    Section.3 LadnSARWnd主界面生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../part03_qt/cpt01_landapp/04_landapp_tableWidget.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/04_landapp_tableWidget.html">
+            
+                    
+                    Section.4 tableWidget示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../../part03_qt/cpt01_landapp/05_landapp_projectNewDlg.html">
+            
+                <a href="../../part03_qt/cpt01_landapp/05_landapp_projectNewDlg.html">
+            
+                    
+                    Section.4 Project工程文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../part03_qt/cpt02_qt_widgets/00_README.html">
+            
+                <a href="../../part03_qt/cpt02_qt_widgets/00_README.html">
+            
+                    
+                    Chapter 2 Qt 界面开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../part03_qt/cpt02_qt_widgets/01_MainWindow.html">
+            
+                <a href="../../part03_qt/cpt02_qt_widgets/01_MainWindow.html">
+            
+                    
+                    Section.1 MainWindow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../part03_qt/cpt03_qt_basic_components/00_README.html">
+            
+                <a href="../../part03_qt/cpt03_qt_basic_components/00_README.html">
+            
+                    
+                    Chapter 3 Qt 基础组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../part03_qt/cpt03_qt_basic_components/01_QString.html">
+            
+                <a href="../../part03_qt/cpt03_qt_basic_components/01_QString.html">
+            
+                    
+                    Section.1 QString功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../part04_rs/cpt00_README.html">
+            
+                <a href="../../part04_rs/cpt00_README.html">
+            
+                    
+                    Part 4 RemoteSensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../part04_rs/cpt01_img_processing/00_README.html">
+            
+                <a href="../../part04_rs/cpt01_img_processing/00_README.html">
+            
+                    
+                    Chapter 1 图像处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../part04_rs/cpt01_img_processing/01_rg_filter.html">
+            
+                <a href="../../part04_rs/cpt01_img_processing/01_rg_filter.html">
+            
+                    
+                    Section.1 RG滤波
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../../part04_rs/cpt01_img_processing/02_image_resampling.html">
+            
+                <a href="../../part04_rs/cpt01_img_processing/02_image_resampling.html">
+            
+                    
+                    Section.2 影像重采样
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../part04_rs/cpt02_coord_sys_conversion/00_README.html">
+            
+                <a href="../../part04_rs/cpt02_coord_sys_conversion/00_README.html">
+            
+                    
+                    Chapter 2 坐标系转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../part04_rs/cpt02_coord_sys_conversion/01_utm_to_wgs84blh.html">
+            
+                <a href="../../part04_rs/cpt02_coord_sys_conversion/01_utm_to_wgs84blh.html">
+            
+                    
+                    Section.1 UTM to WGS84 BLH
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../part04_rs/cpt03_insar/00_README.html">
+            
+                <a href="../../part04_rs/cpt03_insar/00_README.html">
+            
+                    
+                    Chapter 3 InSAR
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../part04_rs/cpt03_insar/01_insar_regist.html">
+            
+                <a href="../../part04_rs/cpt03_insar/01_insar_regist.html">
+            
+                    
+                    Section.1 主辅影像配准
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../part04_rs/cpt03_insar/02_insar_resample.html">
+            
+                <a href="../../part04_rs/cpt03_insar/02_insar_resample.html">
+            
+                    
+                    Section.2 辅影像重采样
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../../part04_rs/cpt03_insar/03_insar_int.html">
+            
+                <a href="../../part04_rs/cpt03_insar/03_insar_int.html">
+            
+                    
+                    Section.3 主辅影像干涉
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Section.1 单例模式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="section1-&#x5355;&#x4F8B;&#x6A21;&#x5F0F;">Section.1 &#x5355;&#x4F8B;&#x6A21;&#x5F0F;</h1>
+<p><a href="https://www.cnblogs.com/leaves1024/p/10985599.html" target="_blank">&#x5355;&#x4F8B;&#x6A21;&#x5F0F;url</a></p>
+<h2 id="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x6709;&#x4E09;&#x4E2A;&#x5173;&#x952E;&#x70B9;">&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x6709;&#x4E09;&#x4E2A;&#x5173;&#x952E;&#x70B9;</h2>
+<ol>
+<li><p>&#x5355;&#x4F8B;&#x7C7B;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p> &#x4E3A;&#x6B64;&#xFF0C;&#x5355;&#x4F8B;&#x7C7B;&#x53EA;&#x80FD;&#x63D0;&#x4F9B;&#x79C1;&#x6709;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5373;&#x4FDD;&#x8BC1;&#x4E0D;&#x80FD;&#x968F;&#x610F;&#x521B;&#x5EFA;&#x8BE5;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+</li>
+<li><p>&#x5355;&#x4F8B;&#x7C7B;&#x5FC5;&#x987B;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x552F;&#x4E00;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p> &#x56E0;&#x4E3A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x4E0D;&#x80FD;&#x521B;&#x5EFA;&#x5355;&#x4F8B;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x53EA;&#x80FD;&#x662F;&#x5355;&#x4F8B;&#x7C7B;&#x81EA;&#x5DF1;&#x6765;&#x521B;&#x5EFA;&#x3002;</p>
+</li>
+<li><p>&#x5355;&#x4F8B;&#x7C7B;&#x5FC5;&#x987B;&#x7ED9;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x8FD9;&#x4E00;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p> &#x5916;&#x754C;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x5E76;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5355;&#x4F8B;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x8BE5;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x5916;&#x754C;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;new&#x53BB;&#x83B7;&#x53D6;&#x5B83;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x7684;&#x516C;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x6216;&#x8005;&#x83B7;&#x53D6;&#x5B83;&#x672C;&#x8EAB;&#x7684;&#x9759;&#x6001;&#x79C1;&#x6709;&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x3002;</p>
+</li>
+</ol>
+<h2 id="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF1A;">&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF1A;</h2>
+<ul>
+<li><p>&#x61D2;&#x6C49;&#x5F0F;&#xFF1A;&#x6545;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x61D2;&#x6C49;&#x5F88;&#x61D2;&#x53EA;&#x6709;&#x997F;&#x4E86;&#x624D;&#x4F1A;&#x53BB;&#x627E;&#x5403;&#x7684;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x53BB;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</p>
+</li>
+<li><p>&#x997F;&#x6C49;&#x5F0F;&#xFF1A;&#x997F;&#x4E86;&#x80AF;&#x5B9A;&#x8981;&#x9965;&#x4E0D;&#x62E9;&#x98DF;&#x3002;&#x5728;&#x5355;&#x4F8B;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</p>
+</li>
+</ul>
+<h2 id="code">code</h2>
+<h3 id="&#x61D2;&#x6C49;&#x7248;">&#x61D2;&#x6C49;&#x7248;</h3>
+<pre><code class="lang-C++"><span class="hljs-comment">//Singleton.h</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">pragma</span> once</span>
+
+<span class="hljs-keyword">class</span> Singleton {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">static</span> Singleton* <span class="hljs-title">getInstance</span><span class="hljs-params">()</span></span>;
+
+<span class="hljs-keyword">private</span>:
+    Singleton();
+    Singleton(<span class="hljs-keyword">const</span> Singleton&amp;);
+    Singleton&amp; <span class="hljs-keyword">operator</span>=(<span class="hljs-keyword">const</span> Singleton&amp;);
+
+    <span class="hljs-keyword">static</span> Singleton* instance_;
+};
+
+<span class="hljs-comment">//Singleton.cpp</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;Singleton.h&quot;</span></span>
+
+Singleton* Singleton::instance_ = <span class="hljs-literal">NULL</span>;
+
+Singleton::Singleton() {
+}
+
+Singleton::Singleton(<span class="hljs-keyword">const</span> Singleton&amp;) {
+}
+
+Singleton &amp;
+Singleton::<span class="hljs-keyword">operator</span>=(<span class="hljs-keyword">const</span> Singleton&amp;) {
+}
+
+Singleton *
+Singleton::getInstance() {
+    <span class="hljs-keyword">if</span> (<span class="hljs-literal">NULL</span> == instance_) {
+        instance_ = <span class="hljs-keyword">new</span> Singleton();
+    }
+
+    <span class="hljs-keyword">return</span> instance_;
+}
+</code></pre>
+<ol>
+<li><p>&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x5916;&#x90E8;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x5355;&#x4F8B;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5316;&#xFF1B;</p>
+</li>
+<li><p>&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x4E5F;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x4EE5;&#x7981;&#x6B62;&#x62F7;&#x8D1D;&#x548C;&#x8D4B;&#x503C;&#xFF1B;</p>
+</li>
+<li><p>&#x5177;&#x6709;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#x6307;&#x9488; instance_&#xFF0C;&#x6307;&#x5411;&#x552F;&#x4E00;&#x7684;&#x5B9E;&#x4F8B;&#xFF1B;</p>
+</li>
+<li><p>&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x516C;&#x6709;&#x7684;&#x9759;&#x6001;&#x6210;&#x5458;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x5B9E;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x5B9E;&#x4F8B;&#x4E3A;NULL&#xFF0C;&#x5219;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</p>
+</li>
+<li><p>(&#x5982;&#x679C;&#x6709;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x83B7;&#x53D6;&#x5355;&#x4F8B;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x90FD;&#x53D1;&#x73B0;&#x5B9E;&#x4F8B;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x56E0;&#x6B64;&#x90FD;&#x4F1A;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x5C31;&#x4F1A;&#x4EA7;&#x751F;&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x8981;&#x8D4B;&#x503C;&#x7ED9;instance_&#xFF0C;&#x8FD9;&#x662F;&#x4E25;&#x91CD;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x8981;&#x8003;&#x8651;&#x52A0;&#x9501;&#x3002;)</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="00_README.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 98？ 设计模式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../cpt99_odd_funcs/00_README.html" class="navigation navigation-next " aria-label="Next page: Chapter 99？ 无关的C++函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Section.1 单例模式","level":"1.3.6.1","depth":3,"next":{"title":"Chapter 99？ 无关的C++函数","level":"1.3.7","depth":2,"path":"part02_cpp/cpt99_odd_funcs/00_README.md","ref":"part02_cpp/cpt99_odd_funcs/00_README.md","articles":[{"title":"Section.1 转动的线","level":"1.3.7.1","depth":3,"path":"part02_cpp/cpt99_odd_funcs/01_cpp_filpedLine.md","ref":"part02_cpp/cpt99_odd_funcs/01_cpp_filpedLine.md","articles":[]},{"title":"Section.2 二进制float读取","level":"1.3.7.2","depth":3,"path":"part02_cpp/cpt99_odd_funcs/02_cpp_binary_float_IO.md","ref":"part02_cpp/cpt99_odd_funcs/02_cpp_binary_float_IO.md","articles":[]},{"title":"Section.3 mat读取","level":"1.3.7.3","depth":3,"path":"part02_cpp/cpt99_odd_funcs/03_cpp_mat_IO.md","ref":"part02_cpp/cpt99_odd_funcs/03_cpp_mat_IO.md","articles":[]},{"title":"Section.4 for循环进度条","level":"1.3.7.4","depth":3,"path":"part02_cpp/cpt99_odd_funcs/04_cpp_for_processBar.md","ref":"part02_cpp/cpt99_odd_funcs/04_cpp_for_processBar.md","articles":[]}]},"previous":{"title":"Chapter 98？ 设计模式","level":"1.3.6","depth":2,"path":"part02_cpp/cpt98_design_mode/00_README.md","ref":"part02_cpp/cpt98_design_mode/00_README.md","articles":[{"title":"Section.1 单例模式","level":"1.3.6.1","depth":3,"path":"part02_cpp/cpt98_design_mode/01_Singleton_Pattern.md","ref":"part02_cpp/cpt98_design_mode/01_Singleton_Pattern.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","expandable-chapters-small","back-to-top-button","lightbox"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"litan<402512849@qq.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"My nodebook","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Litan's eMail":"402512849@qq.com"}},"gitbook":"*","description":"日常工作中用到的一些技术总结"},"file":{"path":"part02_cpp/cpt98_design_mode/01_Singleton_Pattern.md","mtime":"2022-03-07T08:09:07.984Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-07T08:35:14.476Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
