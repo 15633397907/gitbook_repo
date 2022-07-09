@@ -41,3 +41,19 @@ for(auto iter: colortable_path)
 <img src="./pics/qtablewidget_1.png">
 
 ## 表格属性设置
+
+QTableWidget 的设置大部分和cell相关，而关于表格属性值的设置则是继承自QTableView，常用的属性有:
+
+设置表格的宽高 setColumnWidth()  setRowHeight()
+
+设置文字换行策略 setWordWrap(bool on)
+
+|属性设置|代码|
+|:-:| :-:|
+|设置表格表头信息|horizontalHeader()->...|
+|设置表格表头信息|verticalHeader()->...|
+|设置表格的宽|setColumnWidth(int col, int width)|
+|设置表格的宽|setColumnWidth(int col, int width)|
+|设置表格的高|setRowHeight(int row, int height)|
+|设置文字换行策略|setWordWrap(bool on)|
+|...|...|
