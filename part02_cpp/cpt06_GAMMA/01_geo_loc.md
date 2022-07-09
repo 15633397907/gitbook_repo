@@ -116,7 +116,7 @@ a ={}& \frac{s^2+q^2-rho^2}{2}\\
   ={}&\lvert s \rvert \lvert q \rvert cos(\angle soq) \\\\
 b ={}&\frac{\lambda \cdot rho \cdot fd + 2 \cdot sv}{2}\\
   ={}& q \cdot v \\\\
-det = {}&s^2v^2-(sv)^2 \\
+det = {}&s^2v^2-(sv)^2 \\1
     = {}&\lvert s\rvert^2\lvert v\rvert^2-\lvert s\rvert^2\lvert v\rvert^2cos^2(\angle sov) \\
     = {}&\lvert s\rvert^2\lvert v\rvert^2sin^2(\angle sov) \\
     = {}&\lvert t\rvert^2 \\\\
@@ -192,4 +192,3 @@ q \ne c_1 \cdot s + c_2 \cdot v + c_3 \cdot t
 $$
 
 通过上式得到的向量$\hat q_{k+1}$的模长介于$\lvert \hat q_k\rvert$和$\lvert q\rvert$之间，满足迭代收敛条件。
-
