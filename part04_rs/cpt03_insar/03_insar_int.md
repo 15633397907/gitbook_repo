@@ -99,7 +99,6 @@ $$
 $$
 \begin{aligned}
 \phi_{int}&=\arctan\frac{bc-ad}{ac+bd} \\
-&=\phi_1-\phi_2 
-
+&=\phi_1-\phi_2
 \end{aligned}
 $$
