@@ -1,4 +1,4 @@
-# Sectiont.01 geo_loc(...)函数实现原理推测
+# Section.01 geo_loc(...)函数实现原理推测
 
 [toc]
 
