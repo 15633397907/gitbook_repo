@@ -118,7 +118,7 @@ a ={}& \frac{s^2+q^2-rho^2}{2}\\
   ={}&\lvert s \rvert \lvert q \rvert cos(\angle soq) \\\\
 b ={}&\frac{\lambda \cdot rho \cdot fd + 2 \cdot sv}{2}\\
   ={}& q \cdot v \\\\
-det = {}&s^2v^2-(sv)^2 \\1
+det = {}&s^2v^2-(sv)^2 \\
     = {}&\lvert s\rvert^2\lvert v\rvert^2-\lvert s\rvert^2\lvert v\rvert^2cos^2(\angle sov) \\
     = {}&\lvert s\rvert^2\lvert v\rvert^2sin^2(\angle sov) \\
     = {}&\lvert t\rvert^2 \\\\
@@ -150,6 +150,7 @@ $$
 $$
 
 从而得到$c_1$和$c_2$的近似值：
+
 $$
 \begin{aligned}
 c_1 = & \frac{\lvert q\rvert cos(\angle soq)}{\lvert s\rvert} \\
@@ -158,6 +159,7 @@ c_2 = & \frac{\lvert q\rvert cos(\angle qov)}{\lvert v\rvert} \\
 $$
 
 同理，得到$c_3$:
+
 $$
 \begin{aligned}
 c_3 =& \pm\sqrt{\frac{q^2-c_1^2s^2-c_2^2v^2-2c_1\cdot c_2\cdot sv}{t^2}} \\
