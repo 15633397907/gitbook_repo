@@ -9,7 +9,7 @@
 ### 幅度互相关
 
 $$
-R(u',v')=\frac{\displaystyle\sum_i\sum_jM_1(i,j)M_2(i+u',j+v')}{\sqrt{\displaystyle\sum_i\sum_jM_1^2(i,j)}*\sqrt{\displaystyle\sum_i\sum_jM_2^2(i+u',j+v')}} 
+R(u',v')=\frac{\displaystyle\sum_i\sum_jM_1(i,j)M_2(i+u',j+v')}{\sqrt{\displaystyle\sum_i\sum_jM_1^2(i,j)}*\sqrt{\displaystyle\sum_i\sum_jM_2^2(i+u',j+v')}}
 $$
 
 式中，$M_1(i,j)$ 和 $M_2(i,j)$分别是两景影像的幅度信息，$u'$和$v'$分别为距离向和方位向的偏移量，相关系数最大处$R(u',v')$的$u'$和$v'$值即为配准的结果。

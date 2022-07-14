@@ -1,5 +1,7 @@
 # Section.3 Diagram Syntax 图表语法
 
+[toc]
+
 markdown可以绘制的图表有很多种，包括：
 
 - Flowchart流程图
@@ -27,14 +29,34 @@ markdown可以绘制的图表有很多种，包括：
 >
 > merge    与一个现有分支合并
 
-```mermaid
-gitGraph:
-	commit
-	branch b2
-	checkout b2
-	commit
-	checkout master
-	commit
-	merge b2
-```
+**\*gitGraph示例在vscode-markdown中无法显示\***
 
+<!-- ```mermaid
+gitGraph:
+commit
+branch b2
+checkout b2
+commit
+checkout master
+commit
+merge b2
+``` -->
+
+## pie Diagram
+
+### syntax
+
+pie + showData (可选,是否在图例处显示真实值)
+title 标题,可选
+"label":value
+...
+
+### example
+
+```mermaid
+pie showData
+title this is pie's title
+"A":10
+"B":15
+"C":30
+```

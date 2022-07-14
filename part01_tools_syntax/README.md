@@ -1,4 +1,4 @@
-# PartⅠ Git
+# PartⅠ 工具语法 Tools Syntax
 
 
 * [Chapter 1 gitbook使用心得](./cpt01_gitbook/00_README.md)
