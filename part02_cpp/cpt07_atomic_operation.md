@@ -1,7 +1,5 @@
 # Chapter.6 Atomic Operation 原子性操作
 
-
-
 多线程访问资源时，需要确保所有的线程不在同一时间内访问相同的资源。
 
 原子性操作是指不能再被拆分、不会被线程调度机制中断的操作。原子性操作一旦开始，在结束前中间不会有任何context switch。
@@ -10,7 +8,7 @@
 
 参考文档中，题到了intel参考手册里说明的，CPU是基于以下三种机制在多核中加锁的原子操作：
 
-（1）Guaranteed atomic operations 
+（1）Guaranteed atomic operations
 （2）Bus locking, using the LOCK# signal and the LOCK instruction prefix
 （3）Cache coherency protocols that ensure that atomic operations can be carried out on cached data structures (cache lock); this mechanism is present in the Pentium 4, Intel Xeon, and P6 family processors
 

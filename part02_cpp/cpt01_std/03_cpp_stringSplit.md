@@ -10,7 +10,7 @@
 
 ## 代码
 
-```
+```C++
 #include <iostream>
 #include <string>
 #include <vector>

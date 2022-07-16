@@ -2,6 +2,8 @@
 
 [单例模式url](https://www.cnblogs.com/leaves1024/p/10985599.html)
 
+[toc]
+
 ## 单例模式有三个关键点
 
 1. 单例类只能有一个实例。

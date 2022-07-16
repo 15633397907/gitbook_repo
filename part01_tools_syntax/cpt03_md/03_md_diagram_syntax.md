@@ -24,9 +24,7 @@ markdown可以绘制的图表有很多种，包括：
 > commit [id: "xxx"] [tag: "xxx"]     当前分支向前推送一个节点，添加id后可以修改界面名称（typora中无法实现id ），添加tag后可以在节点上方显示标签
 >
 > branch     创建一个新分支
->
 > checkout：转换分支
->
 > merge    与一个现有分支合并
 
 **\*gitGraph示例在vscode-markdown中无法显示\***

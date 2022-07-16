@@ -5,17 +5,9 @@
 * [Section 1.1 gitbook安装](01_gitbook_install.md)
 * [Section 1.2 gitbook使用](02_gitbook_use.md)
 
-
-
-参考[GitBook 简明教程](https://www.chengweiyang.cn/gitbook/) 
+参考[GitBook 简明教程](https://www.chengweiyang.cn/gitbook/)
 
 [Gitbook文档](https://docs.gitbook.com/)
-
-
-
-
-
-
 
 <script type="text/javascript">
 window.addEventListener("load", function() {

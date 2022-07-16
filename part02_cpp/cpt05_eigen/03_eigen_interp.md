@@ -1,10 +1,13 @@
 # Section.3 Eigen的矩阵插值
 
+[toc]
+
 ## 原理
 
 参考[iamge_resampling](../../part04_rs/cpt01_img_processing/02_image_resampling.md)
 
 ## 代码
+
 ```C++
 //.h
 /** brief:  从eigen矩阵中提取矩阵并插值到指定大小(暂时仅支持MatrixXcf格式数据)
@@ -183,5 +186,3 @@ inline float cubicConvolution_weiget(float delta)
     }
 }
 ```
-
-## 原理

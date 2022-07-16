@@ -1,14 +1,16 @@
 # Section.21 线性问题预留21-40
 
+[toc]
+
 ## 线性最小二乘
 
 解决密集矩阵的线性最小二乘问题
- 
+
  $$Ax=b$$
 
  Eigen文档中提供了三种方法，分别是SVD分解，QR分解和正规方程三种方式。其中，SVD分解通常是最准确但也是最慢的，正规方程最快但最不准确，QR介于两者之间。
 
- ### SVD分解 (SVD decomposition)
+### SVD分解 (SVD decomposition)
 
 ``` C++
 #include <iostream>
@@ -42,7 +44,6 @@ The least-squares solution is:
 ```
 
 ### QR分解 (QR decomposition)
-
 
  **HouseholderQR** (no pivoting, fast but unstable if your matrix is not rull rank), **ColPivHouseholderQR** (column pivoting, thus a bit slower but more stable) and **FullPivHouseholderQR** (full pivoting, so slowest and slightly more stable than ColPivHouseholderQR).
 ```C++
