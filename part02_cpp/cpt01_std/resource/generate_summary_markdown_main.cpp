@@ -106,14 +106,26 @@ void statistic_files(string path, string parent_relative_path, std::vector<strin
 				iter.path().filename().string() == "resourse")
 				continue;
 			std::string tmp="";
-			for (int i = 0; i < level; i++)tmp += "  ";
+			for (int i = 0; i < level; i++)
+				tmp += "  ";
 			std::string filename = iter.path().filename().string();
 			std::string relative_path = parent_relative_path + filename + "/";
-			tmp += "* [" + filename + "](" + relative_path + "README.md" + ")\n";
+			tmp += "* [" + filename + "](" + relative_path + ")\n";
+			std::string relative_path_readmepath = relative_path + "README.md";
+			
 			//tmp += iter.path().string();
 			cout << tmp;
 			output.push_back(tmp);
+			size_t vec_size_fst = output.size();
 			statistic_files(iter.path().string(), relative_path, output, level + 1);
+			if (!std::filesystem::exists(std::filesystem::path(relative_path_readmepath))) {
+				std::ofstream ofs(relative_path_readmepath);
+				ofs << "# " << filename <<"\n\n" ;
+				for (size_t i = vec_size_fst; i < output.size(); i++) {
+					ofs << output[i].substr((level+1) * 2, output[i].size() - (level+1) * 2);
+				}
+				ofs.close();
+			}
 		}
 		else if (std::filesystem::is_regular_file(iter.path()))
 		{
