@@ -10,7 +10,7 @@
 * [Chapter 02 git](cpt02_git/README.md)
   * [Section 01_git_command](cpt02_git/01_git_command.md)
   * [Section 02_git_pull_clone](cpt02_git/02_git_pull_clone.md)
-* [Chapter 03 markdown](cpt03_md/README.md)
+* [Chapter 03 markdown](cpt03_md)
   * [Section 01 md_usual](cpt03_md/01_md_usual.md)
   * [Section 02 md_latex](cpt03_md/02_md_latex.md)
   * [Section 03 md_diagram_syntax](cpt03_md/03_md_diagram_syntax.md)
