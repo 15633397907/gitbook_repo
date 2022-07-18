@@ -29,7 +29,7 @@ markdown可以绘制的图表有很多种，包括：
 
 **\*gitGraph示例在vscode-markdown中无法显示\***
 
-<!-- ```mermaid
+```markdown
 gitGraph:
 commit
 branch b2
@@ -38,7 +38,7 @@ commit
 checkout master
 commit
 merge b2
-``` -->
+```
 
 ## pie Diagram
 

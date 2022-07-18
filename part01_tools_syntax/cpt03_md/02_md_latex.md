@@ -1,22 +1,24 @@
 # Section.2 LaTeX语法
 
+[toc]
 
+## 希腊字母表
 
 | 编号 | 大写         | 拼写      | 小写         |拼写      | 发音          |
 | ---- | ------------ | -------- | ------------ | -------- | ------------- |
-| 1    |    | \Alpha   | $$\alpha$$   | \alpha   | a:lf          |
-| 2    |     | \Beta    | $$\beta$$    | \beta    | bet           |
+| 1    |  $$\Alpha$$  | \Alpha   | $$\alpha$$   | \alpha   | a:lf          |
+| 2    |   $$\Beta$$  | \Beta    | $$\beta$$    | \beta    | bet           |
 | 3    | $$\Gamma$$   | \Gamma   | $$\gamma$$   | \gamma   | ga:m          |
 | 4    | $$\Delta$$   | \Delta   | $$\delta$$   | \delta   | delt          |
-| 5    |  | \Epsilon | $$\epsilon$$ | \epsilon | ep\`silon     |
-| 6    |     | \Zeta    | $$\zeta$$    | \zeta    | zat           |
-| 7    |      | \Eta     | $$\eta$$     | \eta     | eit           |
+| 5    | $$\Epsilon$$ | \Epsilon | $$\epsilon$$ | \epsilon | ep\`silon     |
+| 6    |  $$\Zeta$$   | \Zeta    | $$\zeta$$    | \zeta    | zat           |
+| 7    |  $$\Eta$$     | \Eta     | $$\eta$$     | \eta     | eit           |
 | 8    | $$\Theta$$   | \Theta   | $$\theta$$   | \theta   | θit           |
-| 9    |     | \Iota    | $$\iota$$    | \iota    | aiot          |
-| 10   |    | \Kappa   | $$\kappa$$   | \kappa   | kap           |
+| 9    |  $$\Iota$$   | \Iota    | $$\iota$$    | \iota    | aiot          |
+| 10   |  $$\Kappa$$  | \Kappa   | $$\kappa$$   | \kappa   | kap           |
 | 11   | $$\Lambda$$  | \Lambda  | $$\lambda$$  | \lambda  | lambd         |
-| 12   |       | \Mu      | $$\mu$$      | \mu      | mju           |
-| 13   |       | \Nu      | $$\nu$$      | \nu      | nju           |
+| 12   |   $$\Mu$$    | \Mu      | $$\mu$$      | \mu      | mju           |
+| 13   |   $$\Nu$$     | \Nu      | $$\nu$$      | \nu      | nju           |
 | 14   | $$\Xi$$      | \Xi      | $$\xi$$      | \xi      | ksi           |
 | 15   |  | \Omicron | $$\omicron$$ | \omicron | omik\`ron     |
 | 16   | $$\Pi$$      | \Pi      | $$\pi$$      | \pi      | pai           |

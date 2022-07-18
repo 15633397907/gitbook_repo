@@ -48,12 +48,12 @@ QTableWidget 的设置大部分和cell相关，而关于表格属性值的设置
 
 设置文字换行策略 setWordWrap(bool on)
 
-|属性设置|代码|
-|:-:| :-:|
-|设置表格表头信息|horizontalHeader()->...|
-|设置表格表头信息|verticalHeader()->...|
-|设置表格的宽|setColumnWidth(int col, int width)|
-|设置表格的宽|setColumnWidth(int col, int width)|
-|设置表格的高|setRowHeight(int row, int height)|
-|设置文字换行策略|setWordWrap(bool on)|
-|...|...|
+|属性设置           |代码                               |
+| :--------------: | :-------------------------------: |
+|设置表格表头信息   |horizontalHeader()->...            |
+|设置表格表头信息   |verticalHeader()->...              |
+|设置表格的宽       |setColumnWidth(int col, int width) |
+|设置表格的宽       |setColumnWidth(int col, int width) |
+|设置表格的高       |setRowHeight(int row, int height)  |
+|设置文字换行策略   |setWordWrap(bool on)               |
+|...                |...                               |

@@ -1,19 +1,13 @@
 # Section.4 WebSocket网络编程
 
- 什么是websocket？
+[toc]
 
+什么是websocket？
 
+## websocket的基础流程
 
-websocket的基础流程
+### 客户端
 
+### 服务端
 
-
-客户端
-
-
-
-服务端
-
-
-
-代码
+## 代码

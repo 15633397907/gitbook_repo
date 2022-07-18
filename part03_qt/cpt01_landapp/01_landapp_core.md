@@ -1,9 +1,12 @@
 # Section.1 LandApp / Core
 
+[toc]
+
 ## Core::RegExp
 
 RegExp属于core库，只有.h文件，记录了（#define）部分常用的正则表达式。
-```
+
+```C++
 #define _Reg_Number "^[-|+]?[0-9]*$"
 #define _Reg_Number_N "^\\d{n}$"
 #define _Reg_Float "^[-|+]?([1-9]\\d*\\.\\d*|0\\.\\d*[1-9]\\d*|0?\\.0+|0)$"
@@ -18,11 +21,12 @@ SysSpace属于core库，负责调用计算机中的标准路径（QStandardPaths
 
 configPath()里用到了QStandardPaths 顾名思义为标准路径，用于解决不同操作系统（跨平台）标准路径不同的问题，例如“我的文档”在不同操作系统中的目录位置
 
-windows:	C:/Users/Documents
+|操作系统|路径|
+|:-:|:-:|
+|windows|C:/Users/Documents|
+|Linux|~/Documents|
 
-Linux:			~/Documents
-
-**a.displayName()**
+#### a.displayName()
 
 QString QStandardPaths::displayName(QStandardPaths::StandardLocation type)
 
@@ -34,7 +38,7 @@ QString QStandardPaths::displayName(QStandardPaths::StandardLocation type)
 
 （可以自行实验查看输出值）
 
-**b.findExecutable()**
+#### b.findExecutable()
 
 QString QStandardPaths::findExecutable(const QString &executableName, const QStringList &paths = QStringList())
 
@@ -46,13 +50,13 @@ QString QStandardPaths::findExecutable(const QString &executableName, const QStr
 
 （可以自行实验查看输出值）
 
-**c.writableLocation()**
+#### c.writableLocation()
 
 QStandardPaths::writableLocation(QStandardPaths::StandardLocation type)
 
 用法与displayName()相似，返回对应的本地目录。如果找不到，返回空QString。
 
- **举例**
+ #### 举例
 
 `// displayName`
 `qDebug() << "DesktopLocation: " << QStandardPaths::displayName(QStandardPaths::DesktopLocation);`
@@ -81,9 +85,7 @@ QStandardPaths::writableLocation(QStandardPaths::StandardLocation type)
 `qDebug() << QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);`
 `qDebug() << QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);`
 
-------------------------------------------------
-
-原文链接：https://blog.csdn.net/luoshabugui/article/details/88012838
+[原文链接](https://blog.csdn.net/luoshabugui/article/details/88012838)
 
 ### slovePath()
 

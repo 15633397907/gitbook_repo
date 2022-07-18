@@ -10,11 +10,7 @@ $$a+bi$$
 
 $$u=\lvert u\rvert e^{j\phi}$$
 
-其中，
-$$\lvert u\rvert$$
-为强度,
-$$\phi$$
-为相位。
+其中，$\lvert u\rvert$为强度,$\phi$为相位。
 
 两种表达方式的相互关系为：
 

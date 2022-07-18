@@ -1,5 +1,7 @@
 # Section.4 LandApp/tableWidget示例
 
+[toc]
+
 参考cSlc - SLC字节类型转换窗口
 
 ## 初始化设置

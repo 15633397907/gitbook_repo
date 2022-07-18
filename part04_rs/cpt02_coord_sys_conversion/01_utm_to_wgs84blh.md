@@ -1,5 +1,7 @@
 # Section.1 UTM to WGS84 BLH
 
+[toc]
+
 ## History
 
 The [National Oceanic and Atmospheric Administration](https://en.wikipedia.org/wiki/National_Oceanic_and_Atmospheric_Administration) (NOAA) website states the system to have been developed by the [United States Army Corps of Engineers](https://en.wikipedia.org/wiki/United_States_Army_Corps_of_Engineers), starting in the early 1940s.[[3\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-3) However, a series of aerial photos found in the Bundesarchiv-Militärarchiv (the military section of the [German Federal Archives](https://en.wikipedia.org/wiki/German_Federal_Archives)) apparently dating from 1943–1944 bear the inscription UTMREF followed by grid letters and digits, and projected according to the transverse Mercator,[[4\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-Buchroithner-4) a finding that would indicate that something called the UTM Reference system was developed in the 1942–43 time frame by the [Wehrmacht](https://en.wikipedia.org/wiki/Wehrmacht). It was probably carried out by the Abteilung für Luftbildwesen (Department for Aerial Photography). From 1947 onward the US Army employed a very similar system, but with the now-standard 0.9996 scale factor at the central meridian as opposed to the German 1.0.[[4\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-Buchroithner-4) For areas within the [contiguous United States](https://en.wikipedia.org/wiki/Contiguous_United_States) the [Clarke](https://en.wikipedia.org/wiki/Alexander_Ross_Clarke) [Ellipsoid](https://en.wikipedia.org/wiki/Earth_ellipsoid#Historical_Earth_ellipsoids) of 1866[[5\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-5) was used. For the remaining areas of Earth, including [Hawaii](https://en.wikipedia.org/wiki/Hawaii), the [International Ellipsoid](https://en.wikipedia.org/wiki/International_Ellipsoid)[[6\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-6) was used. The [World Geodetic System](https://en.wikipedia.org/wiki/World_Geodetic_System) WGS84 ellipsoid is now generally used to model the Earth in the UTM coordinate system, which means current UTM northing at a given point can differ up to 200 meters from the old. For different geographic regions, other datum systems can be used.
@@ -10,7 +12,9 @@ The transverse Mercator projection is a variant of the [Mercator projection](htt
 
 Definitions[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=2)]
 
-**UTM zone**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=3)]
+### UTM zone
+
+[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=3)
 
 <img src="pics/utm_wgs84blh_pic_01.png" alt="UTM Zones"  />
 
@@ -22,7 +26,9 @@ Each of the 60 zones uses a [transverse Mercator](https://en.wikipedia.org/wiki/
 
 In each zone the scale factor of the central meridian reduces the diameter of the transverse cylinder to produce a secant projection with two [standard lines](https://en.wikipedia.org/wiki/Standard_line), or lines of true scale, about 180 km on each side of, and about parallel to, the central meridian (Arc cos 0.9996 = 1.62° at the Equator). The scale is less than 1 inside the standard lines and greater than 1 outside them, but the overall distortion is minimized.
 
-**Overlapping grids**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=4)]
+### Overlapping grids
+
+[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=4)]
 
 <img src="pics/utm_wgs84blh_pic_02.png" alt="?"  />
 
@@ -34,23 +40,29 @@ Latitude bands[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Trans
 
 Latitude bands are not a part of UTM, but rather a part of the [military grid reference system](https://en.wikipedia.org/wiki/Military_grid_reference_system) (MGRS).[[7\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-7) They are however sometimes used.
 
-**Latitude bands**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=6)]
+### Latitude bands
+
+[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=6)]
 
 Each zone is segmented into 20 latitude bands. Each latitude band is 8 degrees high, and is lettered starting from "C" at [80°S](https://en.wikipedia.org/wiki/80th_parallel_south), increasing up the [English](https://en.wikipedia.org/wiki/English_language) [alphabet](https://en.wikipedia.org/wiki/Alphabet) until "X", omitting the letters "I" and "O" (because of their similarity to the numerals one and zero). The last latitude band, "X", is extended an extra 4 degrees, so it ends at [84°N latitude](https://en.wikipedia.org/wiki/84th_parallel_north), thus covering the northernmost land on Earth.
 
 Latitude bands "A" and "B" do exist, as do bands "Y" and "Z". They cover the western and eastern sides of the Antarctic and Arctic regions respectively. A convenient [mnemonic](https://en.wikipedia.org/wiki/Mnemonic) to remember is that the letter "N" is the first letter in "northern hemisphere", so any letter coming before "N" in the alphabet is in the southern hemisphere, and any letter "N" or after is in the northern hemisphere.
 
-**Notation**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=7)]
+### Notation
+
+[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=7)]
 
 The combination of a zone and a latitude band defines a grid zone. The zone is always written first, followed by the latitude band. For example, (see image, top right), a position in [Toronto, Ontario](https://en.wikipedia.org/wiki/Toronto,_Ontario), [Canada](https://en.wikipedia.org/wiki/Canada), would find itself in zone 17 and latitude band "T", thus the full grid zone reference is "17T". The grid zones serve to delineate irregular UTM zone boundaries. They also are an integral part of the [military grid reference system](https://en.wikipedia.org/wiki/Military_grid_reference_system).
 
 A note of caution: A method also is used that simply adds N or S following the zone number to indicate North or South hemisphere (the easting and northing coordinates along with the zone number supplying everything necessary to geolocate a position except which hemisphere). However, this method has caused some confusion since, for instance, "50S" can mean southern hemisphere but also *grid zone* "50S" in the northern hemisphere.[[8\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-8) There are many possible ways to disambiguate between the two methods, two of which are demonstrated later in this article.
 
-**Exceptions**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=8)]
+### Exceptions
+
+[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=8)]
 
 These grid zones are uniform over the globe, except in two areas. On the southwest coast of [Norway](https://en.wikipedia.org/wiki/Norway), grid zone 32V (9° of longitude in width) is extended further west, and grid zone 31V (3° of longitude in width) is correspondingly shrunk to cover only open water. Also, in the region around [Svalbard](https://en.wikipedia.org/wiki/Svalbard), the four grid zones 31X (9° of longitude in width), 33X (12° of longitude in width), 35X (12° of longitude in width), and 37X (9° of longitude in width) are extended to cover what would otherwise have been covered by the seven grid zones 31X to 37X. The three grid zones 32X, 34X and 36X are not used.
 
-- **Grid zones in various parts of the world**
+### Grid zones in various parts of the world
 
 <img src="pics/utm_wgs84blh_pic_03.png" alt="Europe"  />
 
@@ -81,11 +93,13 @@ The [CN Tower](https://en.wikipedia.org/wiki/CN_Tower) is at [43°38′33.24″N
 
 Because latitude band "S" is in the northern hemisphere, a designation such as "38S" is unclear. The "S" might refer to the latitude band ([32°N](https://en.wikipedia.org/wiki/32nd_parallel_north)–[40°N](https://en.wikipedia.org/wiki/40th_parallel_north)) or it might mean "South". It is therefore important to specify which convention is being used, e.g., by spelling out the hemisphere, "North" or "South", or using different symbols, such as − for south and + for north.
 
-**Simplified formulae**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=10)]
+### Simplified formulae
+
+[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=10)]
 
 These formulae are truncated version of [Transverse Mercator: flattening series](https://en.wikipedia.org/w/index.php?title=Transverse_Mercator:_flattening_series&action=edit&redlink=1), which were originally derived by [Johann Heinrich Louis Krüger](https://en.wikipedia.org/wiki/Johann_Heinrich_Louis_Krüger) in 1912.[[9\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-kruger-9) They are accurate to around a [millimeter](https://en.wikipedia.org/wiki/Millimeter) within 3,000 km of the central meridian.[[10\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-karney-10) Concise commentaries for their derivation have also been given.[[11\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-kawase2012-11)[[12\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-kawase2011-12)
 
-The [WGS 84](https://en.wikipedia.org/wiki/WGS_84) [spatial reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) describes Earth as an [oblate spheroid](https://en.wikipedia.org/wiki/Oblate_spheroid) along north-south axis with an [equatorial radius](https://en.wikipedia.org/wiki/Equatorial_radius) of $$ a=6378.137$$ km and an inverse [flattening](https://en.wikipedia.org/wiki/Flattening) of $$1/f=298.257 223 563$$. Let's take a point of latitude  $$\varphi$$ and of longitude $$\lambda$$ and compute its UTM coordinates as well as [point scale factor](https://en.wikipedia.org/wiki/Transverse_Mercator_projection#Point_scale) $$k$$ and [meridian convergence](https://en.wikipedia.org/wiki/Transverse_Mercator_projection#Convergence) $$\gamma$$ using a reference meridian of longitude . By convention, in the [northern hemisphere](https://en.wikipedia.org/wiki/Northern_hemisphere) $$N_0=0$$km and in the [southern hemisphere](https://en.wikipedia.org/wiki/Southern_hemisphere) $$N_0=10000$$ km. By convention also $$k_0=0.9996$$and $$E_0=500$$ km.
+The [WGS 84](https://en.wikipedia.org/wiki/WGS_84) [spatial reference system](https://en.wikipedia.org/wiki/Spatial_reference_system) describes Earth as an [oblate spheroid](https://en.wikipedia.org/wiki/Oblate_spheroid) along north-south axis with an [equatorial radius](https://en.wikipedia.org/wiki/Equatorial_radius) of $ a=6378.137$ km and an inverse [flattening](https://en.wikipedia.org/wiki/Flattening) of $1/f=298.257 223 563$. Let's take a point of latitude  $\varphi$ and of longitude $\lambda$ and compute its UTM coordinates as well as [point scale factor](https://en.wikipedia.org/wiki/Transverse_Mercator_projection#Point_scale) $k$ and [meridian convergence](https://en.wikipedia.org/wiki/Transverse_Mercator_projection#Convergence) $\gamma$ using a reference meridian of longitude . By convention, in the [northern hemisphere](https://en.wikipedia.org/wiki/Northern_hemisphere) $N_0=0$ km and in the [southern hemisphere](https://en.wikipedia.org/wiki/Southern_hemisphere) $N_0=10000km$. By convention also $k_0=0.9996$ and $E_0=500km$.
 
 In the following formulas, the distances are in [kilometers](https://en.wikipedia.org/wiki/Kilometer). In advance, let's compute some preliminary values:
 
@@ -97,7 +111,9 @@ $$   \beta_1=\frac{1}{2}n-\frac{2}{3}n^2+\frac{37}{96}n^3,\beta_2=\frac{1}{48}n^
 
 $$  \delta_1=2n-\frac{2}{3}n^2-2n^3,\delta_2=\frac{7}{3}n^2-\frac{8}{5}n^3,\delta_3=\frac{56}{15}n^3.$$
 
-**From latitude, longitude (*φ*,*λ*) to UTM coordinates (E, N)**[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=11)]
+### From latitude, longitude (*φ*,*λ*) to UTM coordinates (E, N)
+
+[[edit](https://en.wikipedia.org/w/index.php?title=Universal_Transverse_Mercator_coordinate_system&action=edit&section=11)]
 
 First let's compute some intermediate values:
 
@@ -142,4 +158,3 @@ $$\lambda=\lambda_0+\tan^{-1}\big(\frac{\sinh\eta^\prime}{\cos\xi^\prime}\big)$$
 $$k=\frac{k_0A}{a}\sqrt{\{1+{(\frac{1-n}{1+n}\tan\varphi)}^2\}\frac{\cos^2\xi^\prime+\sinh^2\eta^\prime}{ {\sigma^\prime}^2+{\tau^\prime}^2}},$$
 
 $$\gamma=Hemi*\tan^{-1}\big(\frac{\tau^\prime+\sigma^\prime \tan\xi^\prime\tanh\eta^\prime}{\sigma^\prime-\tau^\prime\tan\xi^\prime\tanh\eta^\prime}\big)$$
-

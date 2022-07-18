@@ -108,10 +108,10 @@ $$
 \omega(t)=\begin{cases}
     1-2{\lvert t\rvert}^2+{\lvert t\rvert}^3&,0 \leqslant \lvert t\rvert <1 \\
     4-8\lvert t\rvert+5{\lvert t\rvert}^2-{\lvert t\rvert}^3&,1 \leqslant \lvert t\rvert <2 \\
-    0 &,\lvert t\rvert \geqslant2
-
+    0 &,\lvert t\rvert \geqslant 2
 \end{cases}
 $$
 
 ## 代码
+
 参考 [03_eigen_interp.md](../../part02_cpp/cpt05_eigen/03_eigen_interp.md)
