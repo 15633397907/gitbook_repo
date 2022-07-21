@@ -1,6 +1,19 @@
 # Section.1 RG Filter
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Section.1 RG Filter](#section1-rg-filter)
+  - [image](#image)
+  - [算法流程](#算法流程)
+    - [Step1: Small Structure Removal](#step1-small-structure-removal)
+    - [Step2: Edge Recovery](#step2-edge-recovery)
+  - [C++代码](#c代码)
+
+<!-- /code_chunk_output -->
+
+## image
 
 <center class="half">
     <img src="pics/rg_filter_pics_01.png" height="200" alt="before filter"/>   <img src="pics/rg_filter_pics_02.png" height="200" alt="after filter"/>

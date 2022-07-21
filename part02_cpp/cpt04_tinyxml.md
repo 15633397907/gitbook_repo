@@ -1,6 +1,6 @@
 # Chapter.4 TinyXML
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 这是个很小但又很常用的库，没有过多的内容所以不需要再创建子文件。
 

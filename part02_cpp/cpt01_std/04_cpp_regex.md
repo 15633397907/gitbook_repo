@@ -1,5 +1,21 @@
 # Section.4 regex正则表达式
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Section.4 regex正则表达式](#section4-regex正则表达式)
+  - [正则表达式规则](#正则表达式规则)
+    - [字符集](#字符集)
+    - [计数（重复）](#计数重复)
+    - [子模式](#子模式)
+    - [常用的正则表达式](#常用的正则表达式)
+    - [贪婪与非贪婪](#贪婪与非贪婪)
+  - [std::regex](#stdregex)
+    - [代码示例](#代码示例)
+
+<!-- /code_chunk_output -->
+
 ## 正则表达式规则
 
 []: 字符集，可存放**多个字符**

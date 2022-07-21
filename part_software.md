@@ -1,5 +1,7 @@
 # 软件推荐
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 ## processExplorer
 
 exe文件的依赖文件查询软件。

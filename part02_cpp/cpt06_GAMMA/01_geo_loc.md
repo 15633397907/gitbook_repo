@@ -1,6 +1,17 @@
 # Section.01 geo_loc(...)函数实现原理推测
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Section.01 geo_loc(...)函数实现原理推测](#section01-geo_loc函数实现原理推测)
+  - [源码](#源码)
+  - [公式推算](#公式推算)
+    - [几何关系](#几何关系)
+    - [以无误差值推算公式](#以无误差值推算公式)
+    - [考虑误差](#考虑误差)
+
+<!-- /code_chunk_output -->
 
 ## 源码
 

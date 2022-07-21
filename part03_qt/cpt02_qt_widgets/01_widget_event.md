@@ -1,6 +1,6 @@
 # widget控件的常用事件
 
-[TOC]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 ## paintEvent绘图事件
 

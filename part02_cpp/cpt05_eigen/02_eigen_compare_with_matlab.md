@@ -1,6 +1,6 @@
 # Section.2 与Matlab命令对比
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 // A simple quickref for Eigen. Add anything that's missing.
 

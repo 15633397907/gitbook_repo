@@ -1,6 +1,6 @@
 # Section.2 GDALDataset
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 ## MEM
 
@@ -10,26 +10,22 @@
 
 GDAL的数据读取是使用GDALOpen等函数读写数据时，都需要输入数据的地址const char*  pszFilename`，使用GDAL提供的MEM数据存储格式，即可解决该问题。
 
-
-
 使用gdal自带的gdalwarp对数据进行开窗、重采样处理，由于代码只支持整景影像的重采样，所以需要使用RasterIO(..)提取出窗口数据，保存在内存中，再传入gdalWarp进行重采样处理。
 
 ```C++
-	//代码回头在写............
-	GDALDataset* pSrcDS = (GDALDataset*)GDALOpen(pszSrcFile,GA_ReadOnly);
-    if(pSrcDS == nullptr){
-        return -1;  //Error -1, "srcDataset's point is equal with nullptr
-    }
-	GDALDataType eDT = pSrcDS->GetRasterBand(1)->GetRasterDataType();
-    int iBandCount = pSrcDS->GetRasterCount();
-    int iSrcWidth = pSrcDS->GetRasterXSize();
-    int iSrcHeight = pSrcDS->GetRasterYSize();
-	void* arr;
-	//读取窗口数据
-	CPLErr e_cpl = pSrcDS->RasterIO(GF_Read, 0, 0, iSrcWidth, iSrcHeight, arr, iSrcWidth, iSrcHeight, GDT_Float64, iBandCount, ibands, 0, 0, 0);
-	sprintf_s(c_src_mem_path, 256, "MEM:::DATAPOINTER=%d,PIXELS=%d,LINES=%d,BANDS=%d,DATATYPE=%s", arr, iSrcWidth, iSrcHeight, iBandCount, GDALGetDataTypeName(eDT));
-	
-
+//代码回头在写............
+GDALDataset* pSrcDS = (GDALDataset*)GDALOpen(pszSrcFile,GA_ReadOnly);
+if(pSrcDS == nullptr){
+    return -1;  //Error -1, "srcDataset's point is equal with nullptr
+}
+GDALDataType eDT = pSrcDS->GetRasterBand(1)->GetRasterDataType();
+int iBandCount = pSrcDS->GetRasterCount();
+int iSrcWidth = pSrcDS->GetRasterXSize();
+int iSrcHeight = pSrcDS->GetRasterYSize();
+void* arr;
+//读取窗口数据
+CPLErr e_cpl = pSrcDS->RasterIO(GF_Read, 0, 0, iSrcWidth, iSrcHeight, arr, iSrcWidth, iSrcHeight, GDT_Float64, iBandCount, ibands, 0, 0, 0);
+sprintf_s(c_src_mem_path, 256, "MEM:::DATAPOINTER=%d,PIXELS=%d,LINES=%d,BANDS=%d,DATATYPE=%s", arr, iSrcWidth, iSrcHeight, iBandCount, GDALGetDataTypeName(eDT));
 ```
 
 核心是MEM数据的写法，如下所示：
@@ -37,4 +33,3 @@ GDAL的数据读取是使用GDALOpen等函数读写数据时，都需要输入�
 ```c++
 sprintf_s(c_src_mem_path, 256, "MEM:::DATAPOINTER=%d,PIXELS=%d,LINES=%d,BANDS=%d,DATATYPE=%s", arr, iSrcWidth, iSrcHeight, iBandCount, GDALGetDataTypeName(eDT));
 ```
-

@@ -1,6 +1,6 @@
 # Section.3 .mat读取
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 ## VS工程设置
 

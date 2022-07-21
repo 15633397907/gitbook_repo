@@ -1,6 +1,6 @@
 # Section.4 LandApp/tableWidget示例
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 参考cSlc - SLC字节类型转换窗口
 

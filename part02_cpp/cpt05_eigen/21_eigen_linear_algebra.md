@@ -1,6 +1,16 @@
 # Section.21 线性问题预留21-40
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Section.21 线性问题预留21-40](#section21-线性问题预留21-40)
+  - [线性最小二乘](#线性最小二乘)
+    - [SVD分解 (SVD decomposition)](#svd分解-svd-decomposition)
+    - [QR分解 (QR decomposition)](#qr分解-qr-decomposition)
+    - [正规方程 (normal equations)](#正规方程-normal-equations)
+
+<!-- /code_chunk_output -->
 
 ## 线性最小二乘
 
@@ -46,6 +56,7 @@ The least-squares solution is:
 ### QR分解 (QR decomposition)
 
  **HouseholderQR** (no pivoting, fast but unstable if your matrix is not rull rank), **ColPivHouseholderQR** (column pivoting, thus a bit slower but more stable) and **FullPivHouseholderQR** (full pivoting, so slowest and slightly more stable than ColPivHouseholderQR).
+
 ```C++
 MatrixXf A = MatrixXf::Random(3, 2);
 VectorXf b = VectorXf::Random(3);

@@ -1,5 +1,7 @@
 # Section.1 QString功能
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 ## QString的转码功能
 
 - 转码的一些个人经验：暂时先写到这里，等有空了再转移到cpp中

@@ -2,7 +2,17 @@
 
 [单例模式url](https://www.cnblogs.com/leaves1024/p/10985599.html)
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Section.1 单例模式](#section1-单例模式)
+  - [单例模式有三个关键点](#单例模式有三个关键点)
+  - [单例模式有两种实现方式：](#单例模式有两种实现方式)
+  - [code](#code)
+    - [懒汉版](#懒汉版)
+
+<!-- /code_chunk_output -->
 
 ## 单例模式有三个关键点
 

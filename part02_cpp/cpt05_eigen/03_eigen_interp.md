@@ -1,6 +1,6 @@
 # Section.3 Eigen的矩阵插值
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 ## 原理
 

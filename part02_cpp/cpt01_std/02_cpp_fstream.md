@@ -1,6 +1,18 @@
 # Section.2 fstream
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Section.2 fstream](#section2-fstream)
+  - [ofstream 写文档](#ofstream-写文档)
+    - [精度设置](#精度设置)
+    - [占位符 & 输出位置](#占位符--输出位置)
+    - [输出位置](#输出位置)
+  - [ifstream 读文档](#ifstream-读文档)
+    - [二进制文件读取及跳字节](#二进制文件读取及跳字节)
+
+<!-- /code_chunk_output -->
 
 ## ofstream 写文档
 

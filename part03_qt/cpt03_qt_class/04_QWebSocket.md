@@ -1,6 +1,6 @@
 # Section.4 WebSocket网络编程
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 什么是websocket？
 

@@ -32,4 +32,3 @@ void strSplit(string str, vector<string> &strList, string split){
         strList.push_back(str.substr(pos1));
 }
 ```
-

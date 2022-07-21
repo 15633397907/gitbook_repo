@@ -1,5 +1,9 @@
 # Section.1 LINUX & WIN32
 
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
 ## 头文件替换
 
 | library | windows              | linux                  |

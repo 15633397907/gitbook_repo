@@ -1,6 +1,6 @@
 # Section.2 文件夹监控功能
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 QFileSystemWatcher是Qt自带的一个文件夹监控类，可以检测某一文件或者某一路径的文件变化情况。
 

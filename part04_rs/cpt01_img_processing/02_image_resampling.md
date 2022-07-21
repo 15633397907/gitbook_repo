@@ -1,5 +1,7 @@
 # Section.3 影像重采样
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 ## 双线性内插法
 
 适用于规则点的插值。取插值点周围4个最近像元点，如图所示。

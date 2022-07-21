@@ -1,6 +1,6 @@
 # Section.3 MD5码获取
 
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 md5码，个人理解，是一个加密码，同一个文件会生成唯一不重合的md5码。
 
