@@ -2,6 +2,15 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.3 影像重采样](#section3-影像重采样)
+  - [双线性内插法](#双线性内插法)
+  - [三次卷积插值](#三次卷积插值)
+  - [代码](#代码)
+
+<!-- /code_chunk_output -->
+
 ## 双线性内插法
 
 适用于规则点的插值。取插值点周围4个最近像元点，如图所示。

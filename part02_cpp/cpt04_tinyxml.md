@@ -2,6 +2,17 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Chapter.4 TinyXML](#chapter4-tinyxml)
+  - [环境配置](#环境配置)
+  - [使用](#使用)
+    - [首先设置根目录](#首先设置根目录)
+    - [按名称查找](#按名称查找)
+    - [其他](#其他)
+
+<!-- /code_chunk_output -->
+
 这是个很小但又很常用的库，没有过多的内容所以不需要再创建子文件。
 
 ## 环境配置

@@ -2,6 +2,14 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.05 $2^n$检测方法](#section05-2n检测方法)
+  - [code](#code)
+  - [原理](#原理)
+
+<!-- /code_chunk_output -->
+
 ## code
 
 ```C++

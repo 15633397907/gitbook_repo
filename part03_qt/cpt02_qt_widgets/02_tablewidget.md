@@ -2,6 +2,14 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.02 TableWidget](#section02-tablewidget)
+  - [setCellWidget存放QWidget](#setcellwidget存放qwidget)
+  - [表格属性设置](#表格属性设置)
+
+<!-- /code_chunk_output -->
+
 ## setCellWidget存放QWidget
 
 QTableWidget可以**存放QWidget**，以**颜色表展示**窗口为例。

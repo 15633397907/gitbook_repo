@@ -2,6 +2,21 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.1 LandApp / Core](#section1-landapp--core)
+  - [Core::RegExp](#coreregexp)
+  - [Core::SysSpace](#coresysspace)
+    - [QstandardPaths](#qstandardpaths)
+      - [a.displayName()](#adisplayname)
+      - [b.findExecutable()](#bfindexecutable)
+      - [c.writableLocation()](#cwritablelocation)
+      - [举例](#举例)
+    - [slovePath()](#slovepath)
+    - [writeFile()](#writefile)
+
+<!-- /code_chunk_output -->
+
 ## Core::RegExp
 
 RegExp属于core库，只有.h文件，记录了（#define）部分常用的正则表达式。

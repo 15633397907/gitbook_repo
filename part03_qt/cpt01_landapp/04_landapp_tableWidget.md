@@ -2,6 +2,14 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.4 LandApp/tableWidget示例](#section4-landapptablewidget示例)
+  - [初始化设置](#初始化设置)
+  - [信号与槽](#信号与槽)
+
+<!-- /code_chunk_output -->
+
 参考cSlc - SLC字节类型转换窗口
 
 ## 初始化设置

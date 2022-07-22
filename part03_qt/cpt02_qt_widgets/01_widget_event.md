@@ -2,6 +2,14 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [widget控件的常用事件](#widget控件的常用事件)
+  - [paintEvent绘图事件](#paintevent绘图事件)
+  - [dragEnterEvent & dropEvent 拖拽事件](#dragenterevent--dropevent-拖拽事件)
+
+<!-- /code_chunk_output -->
+
 ## paintEvent绘图事件
 
 paintEvent(QPaintEvent *event) 主要用于图形的绘制，当设置布局（layout）后，改变窗口尺寸会触发update/repaint？事件，重新对QWidget进行绘制

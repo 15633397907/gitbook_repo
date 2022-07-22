@@ -2,6 +2,13 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.3 MD5码获取](#section3-md5码获取)
+  - [QCryptographicHash](#qcryptographichash)
+
+<!-- /code_chunk_output -->
+
 md5码，个人理解，是一个加密码，同一个文件会生成唯一不重合的md5码。
 
 使用情景：在写文件的监测功能时，需要保存检测过的历史信息，那么将检测文件夹的地址作为地址非常合适，但仅有一个问题：地址无法作为文件名保存。

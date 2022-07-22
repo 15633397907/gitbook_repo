@@ -2,6 +2,25 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.2 与Matlab命令对比](#section2-与matlab命令对比)
+  - [矩阵/向量的尺寸、值](#矩阵向量的尺寸值)
+  - [矩阵重定义大小](#矩阵重定义大小)
+  - [矩阵填充](#矩阵填充)
+  - [特殊矩阵构建](#特殊矩阵构建)
+  - [向量的等距分布](#向量的等距分布)
+  - [矩阵/向量的区域选取（块）](#矩阵向量的区域选取块)
+  - [矩阵的转置、共轭等](#矩阵的转置共轭等)
+  - [矩阵运算](#矩阵运算)
+  - [矩阵的数值操作](#矩阵的数值操作)
+  - [点积、范数等](#点积范数等)
+  - [格式转换](#格式转换)
+  - [数组与Eigen矩阵的关联](#数组与eigen矩阵的关联)
+  - [特征值问题](#特征值问题)
+
+<!-- /code_chunk_output -->
+
 // A simple quickref for Eigen. Add anything that's missing.
 
 // Main author: Keir Mierle

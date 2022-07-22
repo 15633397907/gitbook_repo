@@ -3,6 +3,20 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.1 LINUX & WIN32](#section1-linux--win32)
+  - [头文件替换](#头文件替换)
+  - [sprintf_s -> snprintf](#sprintf_s---snprintf)
+  - [fopen_s -> fopen](#fopen_s---fopen)
+  - [memset](#memset)
+  - [_strlwr 平替（无函数）](#_strlwr-平替无函数)
+  - [_splitpath_s 平替（无函数）](#_splitpath_s-平替无函数)
+  - [_fseeki64 ->  fseeko64](#_fseeki64----fseeko64)
+  - [CPU数量](#cpu数量)
+
+<!-- /code_chunk_output -->
+
 
 ## 头文件替换
 

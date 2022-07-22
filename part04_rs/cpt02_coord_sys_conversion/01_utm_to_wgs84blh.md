@@ -2,6 +2,21 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [Section.1 UTM to WGS84 BLH](#section1-utm-to-wgs84-blh)
+  - [History](#history)
+    - [UTM zone](#utm-zone)
+    - [Overlapping grids](#overlapping-grids)
+    - [Latitude bands](#latitude-bands)
+    - [Notation](#notation)
+    - [Exceptions](#exceptions)
+    - [Grid zones in various parts of the world](#grid-zones-in-various-parts-of-the-world)
+    - [Simplified formulae](#simplified-formulae)
+    - [From latitude, longitude (*φ*,*λ*) to UTM coordinates (E, N)](#from-latitude-longitude-φλ-to-utm-coordinates-e-n)
+
+<!-- /code_chunk_output -->
+
 ## History
 
 The [National Oceanic and Atmospheric Administration](https://en.wikipedia.org/wiki/National_Oceanic_and_Atmospheric_Administration) (NOAA) website states the system to have been developed by the [United States Army Corps of Engineers](https://en.wikipedia.org/wiki/United_States_Army_Corps_of_Engineers), starting in the early 1940s.[[3\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-3) However, a series of aerial photos found in the Bundesarchiv-Militärarchiv (the military section of the [German Federal Archives](https://en.wikipedia.org/wiki/German_Federal_Archives)) apparently dating from 1943–1944 bear the inscription UTMREF followed by grid letters and digits, and projected according to the transverse Mercator,[[4\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-Buchroithner-4) a finding that would indicate that something called the UTM Reference system was developed in the 1942–43 time frame by the [Wehrmacht](https://en.wikipedia.org/wiki/Wehrmacht). It was probably carried out by the Abteilung für Luftbildwesen (Department for Aerial Photography). From 1947 onward the US Army employed a very similar system, but with the now-standard 0.9996 scale factor at the central meridian as opposed to the German 1.0.[[4\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-Buchroithner-4) For areas within the [contiguous United States](https://en.wikipedia.org/wiki/Contiguous_United_States) the [Clarke](https://en.wikipedia.org/wiki/Alexander_Ross_Clarke) [Ellipsoid](https://en.wikipedia.org/wiki/Earth_ellipsoid#Historical_Earth_ellipsoids) of 1866[[5\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-5) was used. For the remaining areas of Earth, including [Hawaii](https://en.wikipedia.org/wiki/Hawaii), the [International Ellipsoid](https://en.wikipedia.org/wiki/International_Ellipsoid)[[6\]](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#cite_note-6) was used. The [World Geodetic System](https://en.wikipedia.org/wiki/World_Geodetic_System) WGS84 ellipsoid is now generally used to model the Earth in the UTM coordinate system, which means current UTM northing at a given point can differ up to 200 meters from the old. For different geographic regions, other datum systems can be used.

@@ -2,6 +2,20 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [软件推荐](#软件推荐)
+  - [processExplorer](#processexplorer)
+  - [ILMerge*](#ilmerge)
+  - [CCompare](#ccompare)
+  - [Inno Setup](#inno-setup)
+  - [VSCode拓展包](#vscode拓展包)
+  - [zotero](#zotero)
+  - [listary](#listary)
+  - [Captura](#captura)
+
+<!-- /code_chunk_output -->
+
 ## processExplorer
 
 exe文件的依赖文件查询软件。
